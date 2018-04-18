@@ -1,6 +1,3 @@
-# water-simulation
-Final Project for Computer Graphics CS184
+# Project 4: Cloth Simulation
 
-Created by Anna Leskova, Justin Kang and Karina Goot.
-
-Currentnly in development.
+https://cs184.org/article/35
