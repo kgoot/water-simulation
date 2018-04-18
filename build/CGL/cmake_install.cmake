@@ -1,8 +1,8 @@
-# Install script for directory: /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL
+# Install script for directory: /Users/karina/cs184/water-simulation/CGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL")
+  set(CMAKE_INSTALL_PREFIX "/Users/karina/cs184/water-simulation/CGL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/cmake_install.cmake")
+  include("/Users/karina/cs184/water-simulation/build/CGL/src/cmake_install.cmake")
 
 endif()
 

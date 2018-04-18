@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/base64.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/color.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/color.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/complex.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/complex.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/lodepng.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/matrix3x3.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/matrix4x4.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/quaternion.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/spectrum.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/tinyxml2.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector2D.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector3D.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector4D.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/base64.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/base64.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/color.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/color.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/complex.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/complex.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/lodepng.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/matrix3x3.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/matrix4x4.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/quaternion.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/spectrum.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/tinyxml2.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/vector2D.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/vector3D.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o"
+  "/Users/karina/cs184/water-simulation/CGL/src/vector4D.cpp" "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -41,7 +41,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
+  "/Users/karina/cs184/water-simulation/build/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

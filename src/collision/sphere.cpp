@@ -9,29 +9,12 @@ using namespace CGL;
 
 void Sphere::collide(PointMass &pm) {
   // TODO (Part 3.1): Handle collisions with spheres.
-
-  // 1. Compute tangent line
-  Vector3D d = (origin - pm.position).unit();
-  Vector3D o = pm.position;
-
-  double a = dot(d, d);
-  double b = dot(2 * (o - origin), d);
-  double c = dot(o - origin, o - origin) - radius2;
-
-  if ((pm.position - origin).norm() > radius) {
-    return;
+  Vector3D pos = pm.position;
+  if (pow(pos.x - origin.x, 2) + pow(pos.y - origin.y, 2) + pow(pos.z - origin.z, 2) <= radius2) {
+    Vector3D tangentPoint = origin + (pm.position - origin).unit() * radius;
+    Vector3D correctionVector = tangentPoint - pm.last_position;
+    pm.position = pm.last_position + (1 - friction) * correctionVector;
   }
-
-  double t1 = (-b - sqrt(pow(b, 2) - 4*a*c)) / (2*a);
-  double t2 = (-b + sqrt(pow(b, 2) - 4*a*c)) / (2*a);
-  double min_t = std::min(t1, t2);
-
-
-  Vector3D tangent_point = o + min_t * d;
-
-  Vector3D correction = tangent_point - pm.last_position;
-  pm.position = pm.last_position + correction * (1 - friction);
-
 }
 
 void Sphere::render(GLShader &shader) {

@@ -10,8 +10,8 @@
 #include "CGL/CGL.h"
 #include "collision/plane.h"
 #include "collision/sphere.h"
-#include "cloth.h"
-#include "clothSimulator.h"
+#include "water.h"
+#include "waterSimulator.h"
 #include "json.hpp"
 
 typedef uint32_t gid_t;
@@ -29,7 +29,7 @@ const string CLOTH = "cloth";
 
 const unordered_set<string> VALID_KEYS = {SPHERE, PLANE, CLOTH};
 
-ClothSimulator *app = nullptr;
+WaterSimulator *app = nullptr;
 GLFWwindow *window = nullptr;
 Screen *screen = nullptr;
 
@@ -59,7 +59,7 @@ void createGLContexts() {
   glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
 
   // Create a GLFWwindow object
-  window = glfwCreateWindow(800, 800, "Cloth Simulator", nullptr, nullptr);
+  window = glfwCreateWindow(800, 800, "Water Simulator", nullptr, nullptr);
   if (window == nullptr) {
     std::cout << "Failed to create GLFW window" << std::endl;
     glfwTerminate();
@@ -145,7 +145,7 @@ void incompleteObjectError(const char *object, const char *attribute) {
   exit(-1);
 }
 
-void loadObjectsFromFile(string filename, Cloth *cloth, ClothParameters *cp, vector<CollisionObject *>* objects) {
+void loadObjectsFromFile(string filename, Water *cloth, WaterParameters *cp, vector<CollisionObject *>* objects) {
   // Read JSON from file
   ifstream i(filename);
   json j;
@@ -167,7 +167,7 @@ void loadObjectsFromFile(string filename, Cloth *cloth, ClothParameters *cp, vec
 
     // Parse object depending on type (cloth, sphere, or plane)
     if (key == CLOTH) {
-      // Cloth
+      // Water
       double width, height;
       int num_width_points, num_height_points;
       float thickness;
@@ -233,7 +233,7 @@ void loadObjectsFromFile(string filename, Cloth *cloth, ClothParameters *cp, vec
       cloth->orientation = orientation;
       cloth->pinned = pinned;
 
-      // Cloth parameters
+      // Water parameters
       bool enable_structural_constraints, enable_shearing_constraints, enable_bending_constraints;
       double damping, density, ks;
 
@@ -349,8 +349,8 @@ void loadObjectsFromFile(string filename, Cloth *cloth, ClothParameters *cp, vec
 }
 
 int main(int argc, char **argv) {
-  Cloth cloth;
-  ClothParameters cp;
+  Water cloth;
+  WaterParameters cp;
   vector<CollisionObject *> objects;
 
   if (argc == 1) { // No arguments, default initialization
@@ -374,12 +374,12 @@ int main(int argc, char **argv) {
 
   createGLContexts();
 
-  // Initialize the Cloth object
+  // Initialize the Water object
   cloth.buildGrid();
   cloth.buildClothMesh();
 
-  // Initialize the ClothSimulator object
-  app = new ClothSimulator(screen);
+  // Initialize the WaterSimulator object
+  app = new WaterSimulator(screen);
   app->loadCloth(&cloth);
   app->loadClothParameters(&cp);
   app->loadCollisionObjects(&objects);

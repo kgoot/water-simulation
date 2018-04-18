@@ -136,15 +136,15 @@ ostream
 cmath
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/base64.cpp
+/Users/karina/cs184/water-simulation/CGL/src/base64.cpp
 base64.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/base64.h
+/Users/karina/cs184/water-simulation/CGL/src/base64.h
 iostream
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/color.cpp
+/Users/karina/cs184/water-simulation/CGL/src/color.cpp
 color.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/color.h
+/Users/karina/cs184/water-simulation/CGL/src/color.h
 stdio.h
 -
 string.h
@@ -154,13 +154,13 @@ ostream
 sstream
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/complex.cpp
+/Users/karina/cs184/water-simulation/CGL/src/complex.cpp
 complex.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/complex.h
+/Users/karina/cs184/water-simulation/CGL/src/complex.h
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/lodepng.cpp
+/Users/karina/cs184/water-simulation/CGL/src/lodepng.cpp
 lodepng.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/lodepng.h
+/Users/karina/cs184/water-simulation/CGL/src/lodepng.h
 stdio.h
 -
 stdlib.h
@@ -168,29 +168,29 @@ stdlib.h
 fstream
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/matrix3x3.cpp
+/Users/karina/cs184/water-simulation/CGL/src/matrix3x3.cpp
 matrix3x3.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/matrix3x3.h
+/Users/karina/cs184/water-simulation/CGL/src/matrix3x3.h
 iostream
 -
 cmath
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/matrix4x4.cpp
+/Users/karina/cs184/water-simulation/CGL/src/matrix4x4.cpp
 matrix4x4.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/matrix4x4.h
+/Users/karina/cs184/water-simulation/CGL/src/matrix4x4.h
 iostream
 -
 cmath
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/quaternion.cpp
+/Users/karina/cs184/water-simulation/CGL/src/quaternion.cpp
 quaternion.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/quaternion.h
+/Users/karina/cs184/water-simulation/CGL/src/quaternion.h
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/spectrum.cpp
+/Users/karina/cs184/water-simulation/CGL/src/spectrum.cpp
 spectrum.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/spectrum.h
+/Users/karina/cs184/water-simulation/CGL/src/spectrum.h
 stdio.h
 -
 string.h
@@ -200,9 +200,9 @@ ostream
 sstream
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/tinyxml2.cpp
+/Users/karina/cs184/water-simulation/CGL/src/tinyxml2.cpp
 tinyxml2.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/tinyxml2.h
+/Users/karina/cs184/water-simulation/CGL/src/tinyxml2.h
 new
 -
 stddef.h
@@ -210,15 +210,15 @@ stddef.h
 cstddef
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector2D.cpp
+/Users/karina/cs184/water-simulation/CGL/src/vector2D.cpp
 vector2D.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector2D.h
+/Users/karina/cs184/water-simulation/CGL/src/vector2D.h
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector3D.cpp
+/Users/karina/cs184/water-simulation/CGL/src/vector3D.cpp
 vector3D.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector3D.h
+/Users/karina/cs184/water-simulation/CGL/src/vector3D.h
 
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector4D.cpp
+/Users/karina/cs184/water-simulation/CGL/src/vector4D.cpp
 vector4D.h
-/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/CGL/src/vector4D.h
+/Users/karina/cs184/water-simulation/CGL/src/vector4D.h
 

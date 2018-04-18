@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/camera.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/camera.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/cloth.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/cloth.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/clothMesh.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/clothMesh.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/clothSimulator.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/collision/plane.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/collision/plane.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/collision/sphere.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/main.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/main.cpp.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src/misc/sphere_drawing.cpp" "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/camera.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/camera.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/clothMesh.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/clothMesh.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/collision/plane.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/collision/plane.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/collision/sphere.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/main.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/main.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/misc/sphere_drawing.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/water.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/water.cpp.o"
+  "/Users/karina/cs184/water-simulation/src/waterSimulator.cpp" "/Users/karina/cs184/water-simulation/build/src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -36,8 +36,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
+  "/Users/karina/cs184/water-simulation/build/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake"
+  "/Users/karina/cs184/water-simulation/build/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

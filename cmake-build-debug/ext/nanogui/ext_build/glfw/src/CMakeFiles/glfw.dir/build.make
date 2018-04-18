@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang
+CMAKE_SOURCE_DIR = /Users/karina/cs184/water-simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/karina/cs184/water-simulation/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend.make
@@ -62,19 +62,19 @@ glfw_OBJECTS =
 
 # External object files for target glfw
 glfw_EXTERNAL_OBJECTS = \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
 
 ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o
 ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o
@@ -91,9 +91,9 @@ ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib: ext/nanogui/ext_build/glfw/src
 ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o
 ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make
 ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libglfw.dylib"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_symlink_library libglfw.3.2.dylib libglfw.3.dylib libglfw.dylib
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libglfw.dylib"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_symlink_library libglfw.3.2.dylib libglfw.3.dylib libglfw.dylib
 
 ext/nanogui/ext_build/glfw/src/libglfw.3.dylib: ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib
 	@$(CMAKE_COMMAND) -E touch_nocreate ext/nanogui/ext_build/glfw/src/libglfw.3.dylib
@@ -111,10 +111,10 @@ ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/requires:
 .PHONY : ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/requires
 
 ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/clean:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
 .PHONY : ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/clean
 
 ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/ext/nanogui/ext/glfw/src /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/karina/cs184/water-simulation /Users/karina/cs184/water-simulation/ext/nanogui/ext/glfw/src /Users/karina/cs184/water-simulation/cmake-build-debug /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend
 

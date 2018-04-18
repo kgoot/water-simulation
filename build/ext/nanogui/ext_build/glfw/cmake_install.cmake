@@ -1,4 +1,4 @@
-# Install script for directory: /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/ext/nanogui/ext/glfw
+# Install script for directory: /Users/karina/cs184/water-simulation/ext/nanogui/ext/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/build/ext/nanogui/ext_build/glfw/src/cmake_install.cmake")
+  include("/Users/karina/cs184/water-simulation/build/ext/nanogui/ext_build/glfw/src/cmake_install.cmake")
 
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/src
+# Install script for directory: /Users/karina/cs184/water-simulation/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,21 +29,21 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/clothsim")
+   "/Users/karina/cs184/water-simulation/clothsim")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang" TYPE EXECUTABLE FILES "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/clothsim")
-  if(EXISTS "$ENV{DESTDIR}/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/clothsim" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/clothsim")
+file(INSTALL DESTINATION "/Users/karina/cs184/water-simulation" TYPE EXECUTABLE FILES "/Users/karina/cs184/water-simulation/cmake-build-debug/clothsim")
+  if(EXISTS "$ENV{DESTDIR}/Users/karina/cs184/water-simulation/clothsim" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/karina/cs184/water-simulation/clothsim")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui"
-      "$ENV{DESTDIR}/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/clothsim")
+      -delete_rpath "/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui"
+      "$ENV{DESTDIR}/Users/karina/cs184/water-simulation/clothsim")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" "$ENV{DESTDIR}/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/clothsim")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" "$ENV{DESTDIR}/Users/karina/cs184/water-simulation/clothsim")
     endif()
   endif()
 endif()

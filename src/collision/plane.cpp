@@ -2,7 +2,7 @@
 #include <nanogui/nanogui.h>
 
 #include "../clothMesh.h"
-#include "../clothSimulator.h"
+#include "../waterSimulator.h"
 #include "plane.h"
 
 using namespace std;
@@ -12,30 +12,13 @@ using namespace CGL;
 
 void Plane::collide(PointMass &pm) {
   // TODO (Part 3.2): Handle collisions with planes.
-
-  // Check if pm is inside plane.
-
-  Vector3D check_d = (pm.position - pm.last_position).unit();
-  Vector3D check_o = pm.last_position;
-
-  double check_t = dot(point - check_o, normal) / dot(check_d, normal);
-
-  if (check_t < 0 || check_t > (pm.position - pm.last_position).norm()) {
-    return;
+  if ((dot(pm.last_position - point, normal) > 0 && dot(pm.position - point, normal) < 0)
+      || (dot(pm.last_position - point, normal) < 0 && dot(pm.position - point, normal) > 0)) {
+    double distance = abs(dot(pm.position, normal));
+    Vector3D tangentPoint = pm.position + distance * normal; //- or +??
+    Vector3D correctionVector = pm.last_position - tangentPoint;
+    pm.position = pm.last_position + (1 - friction) * correctionVector + normal*SURFACE_OFFSET;
   }
-
-
-//  Vector3D d = (origin - pm.position).unit();
-  Vector3D d = normal.unit();
-  Vector3D o = pm.position;
-
-  double t = dot((point - o), normal) / dot(d, normal);
-
-  Vector3D tangent_point = o + t * d;
-
-  Vector3D correction = tangent_point - pm.last_position;
-
-  pm.position = pm.last_position + (correction + normal * SURFACE_OFFSET) * (1 - friction);
 
 }
 

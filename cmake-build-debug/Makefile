@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang
+CMAKE_SOURCE_DIR = /Users/karina/cs184/water-simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/karina/cs184/water-simulation/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/CMakeFiles /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles /Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

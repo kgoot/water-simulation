@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "CGL/CGL.h"
-#include "pointMass.h"
+#include "particle.h"
 
 using namespace CGL;
 using namespace std;

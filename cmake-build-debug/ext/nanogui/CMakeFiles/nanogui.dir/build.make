@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang
+CMAKE_SOURCE_DIR = /Users/karina/cs184/water-simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/karina/cs184/water-simulation/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include ext/nanogui/CMakeFiles/nanogui.dir/depend.make
@@ -62,51 +62,51 @@ nanogui_OBJECTS =
 
 # External object files for target nanogui
 nanogui_EXTERNAL_OBJECTS = \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
 
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o
@@ -155,8 +155,8 @@ ext/nanogui/libnanogui.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_obj
 ext/nanogui/libnanogui.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui.dir/build.make
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.dylib"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.dylib"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ext/nanogui/CMakeFiles/nanogui.dir/build: ext/nanogui/libnanogui.dylib
@@ -168,10 +168,10 @@ ext/nanogui/CMakeFiles/nanogui.dir/requires:
 .PHONY : ext/nanogui/CMakeFiles/nanogui.dir/requires
 
 ext/nanogui/CMakeFiles/nanogui.dir/clean:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
 .PHONY : ext/nanogui/CMakeFiles/nanogui.dir/clean
 
 ext/nanogui/CMakeFiles/nanogui.dir/depend:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/ext/nanogui /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui /Users/youngwookkang/Documents/Berkeley/now/184/proj4-clothsim-Justinykang/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/karina/cs184/water-simulation /Users/karina/cs184/water-simulation/ext/nanogui /Users/karina/cs184/water-simulation/cmake-build-debug /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui /Users/karina/cs184/water-simulation/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/nanogui/CMakeFiles/nanogui.dir/depend
 
