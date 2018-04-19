@@ -17,360 +17,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3d7b27b-07c2-495a-beb3-12ccb8ab7314" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/CGL/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/Makefile" afterPath="$PROJECT_DIR$/build/CGL/Makefile" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/CGL/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/base64.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/base64.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/build.make" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/color.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/color.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/complex.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/complex.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/depend.internal" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/flags.make" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/link.txt" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/CGL/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/Makefile" afterPath="$PROJECT_DIR$/build/CGL/src/Makefile" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/CGL/src/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CGL/src/libCGL.a" afterPath="$PROJECT_DIR$/build/CGL/src/libCGL.a" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCCompiler.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/container.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/container.h" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" afterPath="$PROJECT_DIR$/build/Makefile" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" />
       <change beforePath="$PROJECT_DIR$/build/clothsim" afterPath="$PROJECT_DIR$/build/clothsim" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/C.includecache" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/C.includecache" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/build.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/depend.internal" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/flags.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/build.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/flags.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/link.txt" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/Makefile" afterPath="$PROJECT_DIR$/build/ext/nanogui/Makefile" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/Makefile" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/Makefile" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/flags.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/link.txt" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/C.includecache" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/C.includecache" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.internal" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/Makefile" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/Makefile" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/libglfw.3.2.dylib" />
-      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/libnanogui.dylib" afterPath="$PROJECT_DIR$/build/ext/nanogui/libnanogui.dylib" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/progress.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui-obj.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/progress.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/CMakeFiles/nanogui.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/progress.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/progress.make" afterPath="$PROJECT_DIR$/build/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/CXX.includecache" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/DependInfo.cmake" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/build.make" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/camera.cpp.o" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/camera.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/cloth.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/clothMesh.cpp.o" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/clothMesh.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/collision/plane.cpp.o" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/collision/plane.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/depend.internal" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/depend.make" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/flags.make" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/flags.make" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/link.txt" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/link.txt" />
       <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/main.cpp.o" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/main.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/progress.make" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/water.cpp.o" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/water.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/progress.marks" />
       <change beforePath="$PROJECT_DIR$/build/src/Makefile" afterPath="$PROJECT_DIR$/build/src/Makefile" />
-      <change beforePath="$PROJECT_DIR$/build/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/src/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/CGL.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/CGL.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/CXX.includecache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/base64.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/color.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/complex.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/depend.internal" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/lodepng.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/matrix3x3.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/matrix4x4.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/quaternion.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/spectrum.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/tinyxml2.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector2D.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector3D.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CGL.dir/vector4D.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CGL/src/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CGL/src/libCGL.a" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ClothSim.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/ClothSim.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/clothsim" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/C.includecache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/CXX.includecache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/depend.internal" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/depend.internal" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/NanoGUI.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/NanoGUI.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/GLFW.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/GLFW.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/C.includecache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.internal" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/libnanogui.dylib" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/nanogui_resources.cpp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/nanogui_resources.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/DependInfo.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/camera.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/cloth.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/clothMesh.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/collision/plane.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/depend.internal" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/main.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/clothsim.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/docs/1a.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/1b.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/1c.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/1d.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2damp10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2damp80.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2dens1.5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2dens150.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2ks50.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2ks50000.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2p1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2p2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2p3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/2p4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/3_500.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/3_5000.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/3_50000.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/3plane.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/4a1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/4a2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/4a3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/4dens1.5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/4dens150.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/4ks500.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/4ks50000.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/css/main.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/css/noscript.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/js/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/js/jquery.scrollex.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/js/jquery.scrolly.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/js/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/js/skel.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/js/util.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/base/_page.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/base/_typography.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_box.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_button.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_form.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_icon.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_image.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_list.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_pagination.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_section.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/components/_table.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/layout/_footer.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/layout/_header.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/layout/_intro.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/layout/_main.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/layout/_nav.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/layout/_navPanel.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/layout/_wrapper.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/libs/_functions.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/libs/_mixins.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/libs/_skel.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/libs/_vars.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/main.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/sass/noscript.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/index.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/part1.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/part2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/part3.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/part4.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/src/cloth.cpp" afterPath="$PROJECT_DIR$/src/water.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/cloth.h" afterPath="$PROJECT_DIR$/src/water.h" />
-      <change beforePath="$PROJECT_DIR$/src/clothMesh.h" afterPath="$PROJECT_DIR$/src/clothMesh.h" />
-      <change beforePath="$PROJECT_DIR$/src/clothSimulator.cpp" afterPath="$PROJECT_DIR$/src/waterSimulator.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/clothSimulator.h" afterPath="$PROJECT_DIR$/src/waterSimulator.h" />
-      <change beforePath="$PROJECT_DIR$/src/collision/plane.cpp" afterPath="$PROJECT_DIR$/src/collision/plane.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/collision/sphere.cpp" afterPath="$PROJECT_DIR$/src/collision/sphere.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/pointMass.h" afterPath="$PROJECT_DIR$/src/particle.h" />
-      <change beforePath="$PROJECT_DIR$/src/spring.h" afterPath="$PROJECT_DIR$/src/spring.h" />
+      <change beforePath="$PROJECT_DIR$/src/water.cpp" afterPath="$PROJECT_DIR$/src/water.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/waterSimulator.cpp" afterPath="$PROJECT_DIR$/src/waterSimulator.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -382,96 +70,139 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="water.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/water.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clothMesh.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clothMesh.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="camera.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/camera.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="waterSimulator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/waterSimulator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="waterSimulator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/waterSimulator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="water.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/water.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="particle.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/particle.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.9">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="water.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/water.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1054">
+                  <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="camera.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/camera.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="camera.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/camera.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="waterSimulator.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/waterSimulator.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1245">
+                  <caret line="212" column="20" lean-forward="true" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#16#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="glutil.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ext/nanogui/include/nanogui/glutil.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="969">
+                  <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="glad.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ext/nanogui/ext/glad/include/glad/glad.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="226">
+                  <caret line="997" column="36" lean-forward="false" selection-start-line="997" selection-start-column="29" selection-end-line="997" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="waterSimulator.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/waterSimulator.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="850">
+                  <caret line="50" column="7" lean-forward="false" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#61#89#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="particle.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/particle.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#41#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="container.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/container.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="container.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/container.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#45#67#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>justi</find>
+      <find>spring</find>
+      <find>GL_DEPTH_TEST</find>
+      <find>ve</find>
+      <find>light</find>
+      <find>glcolor</find>
+      <find>begin</find>
+      <find>vector</find>
+      <find>polygon</find>
+      <find>init</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -482,10 +213,14 @@
       <list>
         <option value="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" />
         <option value="$PROJECT_DIR$/build/CMakeCache.txt" />
-        <option value="$PROJECT_DIR$/src/water.cpp" />
         <option value="$PROJECT_DIR$/src/water.h" />
         <option value="$PROJECT_DIR$/src/waterSimulator.h" />
         <option value="$PROJECT_DIR$/src/particle.h" />
+        <option value="$PROJECT_DIR$/src/water.cpp" />
+        <option value="$PROJECT_DIR$/src/Container.h" />
+        <option value="$PROJECT_DIR$/src/container.cpp" />
+        <option value="$PROJECT_DIR$/src/container.h" />
+        <option value="$PROJECT_DIR$/src/waterSimulator.cpp" />
       </list>
     </option>
   </component>
@@ -521,6 +256,41 @@
             <path>
               <item name="ClothSim" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="water-simulation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClothSim" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="water-simulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClothSim" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="water-simulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="nanogui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClothSim" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="water-simulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="nanogui" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClothSim" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="water-simulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="nanogui" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="glfw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClothSim" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="water-simulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="nanogui" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="glfw" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ClothSim" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -595,18 +365,18 @@
       <option name="presentableId" value="Default" />
       <updated>1524068930203</updated>
       <workItem from="1524068933614" duration="704000" />
-      <workItem from="1524069827672" duration="593000" />
+      <workItem from="1524069827672" duration="5320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1297000" />
+    <option name="totallyTimeSpent" value="6024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30021143" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14728682" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -723,6 +493,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/waterSimulator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="7" lean-forward="false" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="7" />
+          <folding>
+            <element signature="e#61#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/particle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clothMesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clothMesh.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#43#60#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#45#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/water.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -731,45 +551,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/phong.frag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/water.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/waterSimulator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/waterSimulator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1054">
+          <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="16" />
           <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/particle.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clothMesh.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,8 +573,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/nanogui/ext/glad/include/glad/glad.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="997" column="36" lean-forward="false" selection-start-line="997" selection-start-column="29" selection-end-line="997" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/nanogui/include/nanogui/glutil.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/waterSimulator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="212" column="20" lean-forward="true" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>

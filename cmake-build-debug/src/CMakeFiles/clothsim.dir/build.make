@@ -57,28 +57,28 @@ include src/CMakeFiles/clothsim.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/clothsim.dir/flags.make
 
-src/CMakeFiles/clothsim.dir/cloth.cpp.o: src/CMakeFiles/clothsim.dir/flags.make
-src/CMakeFiles/clothsim.dir/cloth.cpp.o: ../src/cloth.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/clothsim.dir/cloth.cpp.o"
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clothsim.dir/cloth.cpp.o -c /Users/karina/cs184/water-simulation/src/cloth.cpp
+src/CMakeFiles/clothsim.dir/water.cpp.o: src/CMakeFiles/clothsim.dir/flags.make
+src/CMakeFiles/clothsim.dir/water.cpp.o: ../src/water.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/clothsim.dir/water.cpp.o"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clothsim.dir/water.cpp.o -c /Users/karina/cs184/water-simulation/src/water.cpp
 
-src/CMakeFiles/clothsim.dir/cloth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clothsim.dir/cloth.cpp.i"
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karina/cs184/water-simulation/src/cloth.cpp > CMakeFiles/clothsim.dir/cloth.cpp.i
+src/CMakeFiles/clothsim.dir/water.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clothsim.dir/water.cpp.i"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karina/cs184/water-simulation/src/water.cpp > CMakeFiles/clothsim.dir/water.cpp.i
 
-src/CMakeFiles/clothsim.dir/cloth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clothsim.dir/cloth.cpp.s"
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karina/cs184/water-simulation/src/cloth.cpp -o CMakeFiles/clothsim.dir/cloth.cpp.s
+src/CMakeFiles/clothsim.dir/water.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clothsim.dir/water.cpp.s"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karina/cs184/water-simulation/src/water.cpp -o CMakeFiles/clothsim.dir/water.cpp.s
 
-src/CMakeFiles/clothsim.dir/cloth.cpp.o.requires:
+src/CMakeFiles/clothsim.dir/water.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/clothsim.dir/cloth.cpp.o.requires
+.PHONY : src/CMakeFiles/clothsim.dir/water.cpp.o.requires
 
-src/CMakeFiles/clothsim.dir/cloth.cpp.o.provides: src/CMakeFiles/clothsim.dir/cloth.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/cloth.cpp.o.provides.build
-.PHONY : src/CMakeFiles/clothsim.dir/cloth.cpp.o.provides
+src/CMakeFiles/clothsim.dir/water.cpp.o.provides: src/CMakeFiles/clothsim.dir/water.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/water.cpp.o.provides.build
+.PHONY : src/CMakeFiles/clothsim.dir/water.cpp.o.provides
 
-src/CMakeFiles/clothsim.dir/cloth.cpp.o.provides.build: src/CMakeFiles/clothsim.dir/cloth.cpp.o
+src/CMakeFiles/clothsim.dir/water.cpp.o.provides.build: src/CMakeFiles/clothsim.dir/water.cpp.o
 
 
 src/CMakeFiles/clothsim.dir/clothMesh.cpp.o: src/CMakeFiles/clothsim.dir/flags.make
@@ -177,28 +177,28 @@ src/CMakeFiles/clothsim.dir/main.cpp.o.provides: src/CMakeFiles/clothsim.dir/mai
 src/CMakeFiles/clothsim.dir/main.cpp.o.provides.build: src/CMakeFiles/clothsim.dir/main.cpp.o
 
 
-src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o: src/CMakeFiles/clothsim.dir/flags.make
-src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o: ../src/clothSimulator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o"
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clothsim.dir/clothSimulator.cpp.o -c /Users/karina/cs184/water-simulation/src/clothSimulator.cpp
+src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o: src/CMakeFiles/clothsim.dir/flags.make
+src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o: ../src/waterSimulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clothsim.dir/waterSimulator.cpp.o -c /Users/karina/cs184/water-simulation/src/waterSimulator.cpp
 
-src/CMakeFiles/clothsim.dir/clothSimulator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clothsim.dir/clothSimulator.cpp.i"
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karina/cs184/water-simulation/src/clothSimulator.cpp > CMakeFiles/clothsim.dir/clothSimulator.cpp.i
+src/CMakeFiles/clothsim.dir/waterSimulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clothsim.dir/waterSimulator.cpp.i"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karina/cs184/water-simulation/src/waterSimulator.cpp > CMakeFiles/clothsim.dir/waterSimulator.cpp.i
 
-src/CMakeFiles/clothsim.dir/clothSimulator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clothsim.dir/clothSimulator.cpp.s"
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karina/cs184/water-simulation/src/clothSimulator.cpp -o CMakeFiles/clothsim.dir/clothSimulator.cpp.s
+src/CMakeFiles/clothsim.dir/waterSimulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clothsim.dir/waterSimulator.cpp.s"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karina/cs184/water-simulation/src/waterSimulator.cpp -o CMakeFiles/clothsim.dir/waterSimulator.cpp.s
 
-src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.requires:
+src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.requires
+.PHONY : src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.requires
 
-src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.provides: src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.provides.build
-.PHONY : src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.provides
+src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.provides: src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.provides.build
+.PHONY : src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.provides
 
-src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.provides.build: src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o
+src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.provides.build: src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o
 
 
 src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o: src/CMakeFiles/clothsim.dir/flags.make
@@ -249,34 +249,60 @@ src/CMakeFiles/clothsim.dir/camera.cpp.o.provides: src/CMakeFiles/clothsim.dir/c
 src/CMakeFiles/clothsim.dir/camera.cpp.o.provides.build: src/CMakeFiles/clothsim.dir/camera.cpp.o
 
 
+src/CMakeFiles/clothsim.dir/container.cpp.o: src/CMakeFiles/clothsim.dir/flags.make
+src/CMakeFiles/clothsim.dir/container.cpp.o: ../src/container.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/clothsim.dir/container.cpp.o"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clothsim.dir/container.cpp.o -c /Users/karina/cs184/water-simulation/src/container.cpp
+
+src/CMakeFiles/clothsim.dir/container.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clothsim.dir/container.cpp.i"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karina/cs184/water-simulation/src/container.cpp > CMakeFiles/clothsim.dir/container.cpp.i
+
+src/CMakeFiles/clothsim.dir/container.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clothsim.dir/container.cpp.s"
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karina/cs184/water-simulation/src/container.cpp -o CMakeFiles/clothsim.dir/container.cpp.s
+
+src/CMakeFiles/clothsim.dir/container.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/clothsim.dir/container.cpp.o.requires
+
+src/CMakeFiles/clothsim.dir/container.cpp.o.provides: src/CMakeFiles/clothsim.dir/container.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/container.cpp.o.provides.build
+.PHONY : src/CMakeFiles/clothsim.dir/container.cpp.o.provides
+
+src/CMakeFiles/clothsim.dir/container.cpp.o.provides.build: src/CMakeFiles/clothsim.dir/container.cpp.o
+
+
 # Object files for target clothsim
 clothsim_OBJECTS = \
-"CMakeFiles/clothsim.dir/cloth.cpp.o" \
+"CMakeFiles/clothsim.dir/water.cpp.o" \
 "CMakeFiles/clothsim.dir/clothMesh.cpp.o" \
 "CMakeFiles/clothsim.dir/collision/sphere.cpp.o" \
 "CMakeFiles/clothsim.dir/collision/plane.cpp.o" \
 "CMakeFiles/clothsim.dir/main.cpp.o" \
-"CMakeFiles/clothsim.dir/clothSimulator.cpp.o" \
+"CMakeFiles/clothsim.dir/waterSimulator.cpp.o" \
 "CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o" \
-"CMakeFiles/clothsim.dir/camera.cpp.o"
+"CMakeFiles/clothsim.dir/camera.cpp.o" \
+"CMakeFiles/clothsim.dir/container.cpp.o"
 
 # External object files for target clothsim
 clothsim_EXTERNAL_OBJECTS =
 
-clothsim: src/CMakeFiles/clothsim.dir/cloth.cpp.o
+clothsim: src/CMakeFiles/clothsim.dir/water.cpp.o
 clothsim: src/CMakeFiles/clothsim.dir/clothMesh.cpp.o
 clothsim: src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o
 clothsim: src/CMakeFiles/clothsim.dir/collision/plane.cpp.o
 clothsim: src/CMakeFiles/clothsim.dir/main.cpp.o
-clothsim: src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o
+clothsim: src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o
 clothsim: src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o
 clothsim: src/CMakeFiles/clothsim.dir/camera.cpp.o
+clothsim: src/CMakeFiles/clothsim.dir/container.cpp.o
 clothsim: src/CMakeFiles/clothsim.dir/build.make
 clothsim: CGL/src/libCGL.a
 clothsim: ext/nanogui/libnanogui.dylib
 clothsim: /usr/local/lib/libfreetype.dylib
 clothsim: src/CMakeFiles/clothsim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../clothsim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karina/cs184/water-simulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../clothsim"
 	cd /Users/karina/cs184/water-simulation/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clothsim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -284,14 +310,15 @@ src/CMakeFiles/clothsim.dir/build: clothsim
 
 .PHONY : src/CMakeFiles/clothsim.dir/build
 
-src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/cloth.cpp.o.requires
+src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/water.cpp.o.requires
 src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/clothMesh.cpp.o.requires
 src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o.requires
 src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/collision/plane.cpp.o.requires
 src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/main.cpp.o.requires
-src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o.requires
+src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o.requires
 src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o.requires
 src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/camera.cpp.o.requires
+src/CMakeFiles/clothsim.dir/requires: src/CMakeFiles/clothsim.dir/container.cpp.o.requires
 
 .PHONY : src/CMakeFiles/clothsim.dir/requires
 

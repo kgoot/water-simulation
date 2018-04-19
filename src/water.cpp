@@ -62,45 +62,6 @@ void Water::buildGrid() {
   for (vector<int> i : pinned) {
     point_masses[num_width_points * i[1] + i[0]].pinned = true;
   }
-
-
-  // TODO (Part 1.2): Add springs
-  for (int i = 0 ; i < point_masses.size(); i++) {
-    // Structural
-    if (i >= num_width_points) {
-      //add structural above
-      springs.emplace_back(Spring(&point_masses[i], &point_masses[i - num_width_points], STRUCTURAL));
-    }
-    if (i % num_width_points != 0) {
-      //add structural to the left
-      springs.emplace_back(Spring(&point_masses[i], &point_masses[i - 1], STRUCTURAL));
-    }
-
-    // Shearing
-    if (i >= num_width_points) {
-      if ((i + 1) % num_width_points == 0 && num_width_points > 1) {
-        // add shearing on the diagonal left
-        springs.emplace_back(Spring(&point_masses[i], &point_masses[i - num_width_points - 1], SHEARING));
-      } else if (i % num_width_points == 0 && num_width_points > 1) {
-        // add shearing on to the diagonal right
-        springs.emplace_back(Spring(&point_masses[i], &point_masses[i - num_width_points + 1], SHEARING));
-      } else {
-        // add shearing to both sides
-        springs.emplace_back(Spring(&point_masses[i], &point_masses[i - num_width_points - 1], SHEARING));
-        springs.emplace_back(Spring(&point_masses[i], &point_masses[i - num_width_points + 1], SHEARING));
-      }
-    }
-
-    // Bending
-    if (i >= 2 * num_width_points) {
-      //add bending 2 above
-      springs.emplace_back(Spring(&point_masses[i], &point_masses[i - 2 * num_width_points], BENDING));
-    }
-    if (i % num_width_points != 0 && (i - 1) % num_width_points != 0) {
-      //add bending 2 to the left
-      springs.emplace_back(Spring(&point_masses[i], &point_masses[i - 2], BENDING));
-    }
-  }
 }
 
 void Water::simulate(double frames_per_sec, double simulation_steps, WaterParameters *cp,

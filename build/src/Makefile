@@ -279,6 +279,33 @@ collision/sphere.cpp.s:
 	cd /Users/karina/cs184/water-simulation/build && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/collision/sphere.cpp.s
 .PHONY : collision/sphere.cpp.s
 
+container.o: container.cpp.o
+
+.PHONY : container.o
+
+# target to build an object file
+container.cpp.o:
+	cd /Users/karina/cs184/water-simulation/build && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/container.cpp.o
+.PHONY : container.cpp.o
+
+container.i: container.cpp.i
+
+.PHONY : container.i
+
+# target to preprocess a source file
+container.cpp.i:
+	cd /Users/karina/cs184/water-simulation/build && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/container.cpp.i
+.PHONY : container.cpp.i
+
+container.s: container.cpp.s
+
+.PHONY : container.s
+
+# target to generate assembly for a file
+container.cpp.s:
+	cd /Users/karina/cs184/water-simulation/build && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/container.cpp.s
+.PHONY : container.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -412,6 +439,9 @@ help:
 	@echo "... collision/sphere.o"
 	@echo "... collision/sphere.i"
 	@echo "... collision/sphere.s"
+	@echo "... container.o"
+	@echo "... container.i"
+	@echo "... container.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

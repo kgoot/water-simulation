@@ -20,7 +20,7 @@ set(CLOTHSIM_VIEWER_SOURCE
 
     # Camera
     camera.cpp
-)
+        container.cpp container.h)
 
 #-------------------------------------------------------------------------------
 # Embed resources

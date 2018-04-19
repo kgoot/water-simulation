@@ -913,22 +913,10 @@
 		<Unit filename="/Users/karina/cs184/water-simulation/src/camera.h">
 			<Option target="clothsim"/>
 		</Unit>
-		<Unit filename="/Users/karina/cs184/water-simulation/src/cloth.cpp">
-			<Option target="clothsim"/>
-		</Unit>
-		<Unit filename="/Users/karina/cs184/water-simulation/src/cloth.h">
-			<Option target="clothsim"/>
-		</Unit>
 		<Unit filename="/Users/karina/cs184/water-simulation/src/clothMesh.cpp">
 			<Option target="clothsim"/>
 		</Unit>
 		<Unit filename="/Users/karina/cs184/water-simulation/src/clothMesh.h">
-			<Option target="clothsim"/>
-		</Unit>
-		<Unit filename="/Users/karina/cs184/water-simulation/src/clothSimulator.cpp">
-			<Option target="clothsim"/>
-		</Unit>
-		<Unit filename="/Users/karina/cs184/water-simulation/src/clothSimulator.h">
 			<Option target="clothsim"/>
 		</Unit>
 		<Unit filename="/Users/karina/cs184/water-simulation/src/collision/plane.cpp">
@@ -943,6 +931,12 @@
 		<Unit filename="/Users/karina/cs184/water-simulation/src/collision/sphere.h">
 			<Option target="clothsim"/>
 		</Unit>
+		<Unit filename="/Users/karina/cs184/water-simulation/src/container.cpp">
+			<Option target="clothsim"/>
+		</Unit>
+		<Unit filename="/Users/karina/cs184/water-simulation/src/container.h">
+			<Option target="clothsim"/>
+		</Unit>
 		<Unit filename="/Users/karina/cs184/water-simulation/src/main.cpp">
 			<Option target="clothsim"/>
 		</Unit>
@@ -950,6 +944,18 @@
 			<Option target="clothsim"/>
 		</Unit>
 		<Unit filename="/Users/karina/cs184/water-simulation/src/misc/sphere_drawing.h">
+			<Option target="clothsim"/>
+		</Unit>
+		<Unit filename="/Users/karina/cs184/water-simulation/src/water.cpp">
+			<Option target="clothsim"/>
+		</Unit>
+		<Unit filename="/Users/karina/cs184/water-simulation/src/water.h">
+			<Option target="clothsim"/>
+		</Unit>
+		<Unit filename="/Users/karina/cs184/water-simulation/src/waterSimulator.cpp">
+			<Option target="clothsim"/>
+		</Unit>
+		<Unit filename="/Users/karina/cs184/water-simulation/src/waterSimulator.h">
 			<Option target="clothsim"/>
 		</Unit>
 		<Unit filename="/Users/karina/cs184/water-simulation/CMakeLists.txt">

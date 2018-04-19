@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/clothsim.dir/waterSimulator.cpp.o"
   "CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o"
   "CMakeFiles/clothsim.dir/camera.cpp.o"
+  "CMakeFiles/clothsim.dir/container.cpp.o"
   "../clothsim.pdb"
   "../clothsim"
 )

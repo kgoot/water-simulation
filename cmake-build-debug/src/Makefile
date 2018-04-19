@@ -198,33 +198,6 @@ camera.cpp.s:
 	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
-cloth.o: cloth.cpp.o
-
-.PHONY : cloth.o
-
-# target to build an object file
-cloth.cpp.o:
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/cloth.cpp.o
-.PHONY : cloth.cpp.o
-
-cloth.i: cloth.cpp.i
-
-.PHONY : cloth.i
-
-# target to preprocess a source file
-cloth.cpp.i:
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/cloth.cpp.i
-.PHONY : cloth.cpp.i
-
-cloth.s: cloth.cpp.s
-
-.PHONY : cloth.s
-
-# target to generate assembly for a file
-cloth.cpp.s:
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/cloth.cpp.s
-.PHONY : cloth.cpp.s
-
 clothMesh.o: clothMesh.cpp.o
 
 .PHONY : clothMesh.o
@@ -251,33 +224,6 @@ clothMesh.s: clothMesh.cpp.s
 clothMesh.cpp.s:
 	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/clothMesh.cpp.s
 .PHONY : clothMesh.cpp.s
-
-clothSimulator.o: clothSimulator.cpp.o
-
-.PHONY : clothSimulator.o
-
-# target to build an object file
-clothSimulator.cpp.o:
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o
-.PHONY : clothSimulator.cpp.o
-
-clothSimulator.i: clothSimulator.cpp.i
-
-.PHONY : clothSimulator.i
-
-# target to preprocess a source file
-clothSimulator.cpp.i:
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/clothSimulator.cpp.i
-.PHONY : clothSimulator.cpp.i
-
-clothSimulator.s: clothSimulator.cpp.s
-
-.PHONY : clothSimulator.s
-
-# target to generate assembly for a file
-clothSimulator.cpp.s:
-	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/clothSimulator.cpp.s
-.PHONY : clothSimulator.cpp.s
 
 collision/plane.o: collision/plane.cpp.o
 
@@ -333,6 +279,33 @@ collision/sphere.cpp.s:
 	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/collision/sphere.cpp.s
 .PHONY : collision/sphere.cpp.s
 
+container.o: container.cpp.o
+
+.PHONY : container.o
+
+# target to build an object file
+container.cpp.o:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/container.cpp.o
+.PHONY : container.cpp.o
+
+container.i: container.cpp.i
+
+.PHONY : container.i
+
+# target to preprocess a source file
+container.cpp.i:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/container.cpp.i
+.PHONY : container.cpp.i
+
+container.s: container.cpp.s
+
+.PHONY : container.s
+
+# target to generate assembly for a file
+container.cpp.s:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/container.cpp.s
+.PHONY : container.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -387,6 +360,60 @@ misc/sphere_drawing.cpp.s:
 	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.s
 .PHONY : misc/sphere_drawing.cpp.s
 
+water.o: water.cpp.o
+
+.PHONY : water.o
+
+# target to build an object file
+water.cpp.o:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/water.cpp.o
+.PHONY : water.cpp.o
+
+water.i: water.cpp.i
+
+.PHONY : water.i
+
+# target to preprocess a source file
+water.cpp.i:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/water.cpp.i
+.PHONY : water.cpp.i
+
+water.s: water.cpp.s
+
+.PHONY : water.s
+
+# target to generate assembly for a file
+water.cpp.s:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/water.cpp.s
+.PHONY : water.cpp.s
+
+waterSimulator.o: waterSimulator.cpp.o
+
+.PHONY : waterSimulator.o
+
+# target to build an object file
+waterSimulator.cpp.o:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/waterSimulator.cpp.o
+.PHONY : waterSimulator.cpp.o
+
+waterSimulator.i: waterSimulator.cpp.i
+
+.PHONY : waterSimulator.i
+
+# target to preprocess a source file
+waterSimulator.cpp.i:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/waterSimulator.cpp.i
+.PHONY : waterSimulator.cpp.i
+
+waterSimulator.s: waterSimulator.cpp.s
+
+.PHONY : waterSimulator.s
+
+# target to generate assembly for a file
+waterSimulator.cpp.s:
+	cd /Users/karina/cs184/water-simulation/cmake-build-debug && $(MAKE) -f src/CMakeFiles/clothsim.dir/build.make src/CMakeFiles/clothsim.dir/waterSimulator.cpp.s
+.PHONY : waterSimulator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -403,27 +430,30 @@ help:
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
-	@echo "... cloth.o"
-	@echo "... cloth.i"
-	@echo "... cloth.s"
 	@echo "... clothMesh.o"
 	@echo "... clothMesh.i"
 	@echo "... clothMesh.s"
-	@echo "... clothSimulator.o"
-	@echo "... clothSimulator.i"
-	@echo "... clothSimulator.s"
 	@echo "... collision/plane.o"
 	@echo "... collision/plane.i"
 	@echo "... collision/plane.s"
 	@echo "... collision/sphere.o"
 	@echo "... collision/sphere.i"
 	@echo "... collision/sphere.s"
+	@echo "... container.o"
+	@echo "... container.i"
+	@echo "... container.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... misc/sphere_drawing.o"
 	@echo "... misc/sphere_drawing.i"
 	@echo "... misc/sphere_drawing.s"
+	@echo "... water.o"
+	@echo "... water.i"
+	@echo "... water.s"
+	@echo "... waterSimulator.o"
+	@echo "... waterSimulator.i"
+	@echo "... waterSimulator.s"
 .PHONY : help
 
 
