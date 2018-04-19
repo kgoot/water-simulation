@@ -13,15 +13,8 @@ THREE.Sphere.prototype.intersectsBox = function (box) {
 
 Game.init = function () {
     this.debug = false;
-
-    // this.knot = new THREE.Mesh(
-    //     new THREE.TorusKnotGeometry(0.5, 0.1), this.materials.solid);
-    // this.knot.position.set(-3, 2, 1);
-    // this.knotBBox = new THREE.Box3(new THREE.Vector3(), new THREE.Vector3());
-
-    // this.sphere = new THREE.Mesh(
-    //     new THREE.SphereGeometry(1), this.materials.solid);
-    // this.sphere.position.set(2, 2, 0);
+    this.external_accelerations = [new THREE.Vector3(0, -9.8*3, 0)];
+    this.particles = []; // new Array();
 
     var i;
     for (i = 0; i < 3; i++) {
@@ -29,110 +22,77 @@ Game.init = function () {
         for (j = 0; j < 3; j++) {
             var k;
             for (k = 0; k < 3; k++) {
-                // for 
-                var spheree = new THREE.Mesh(
-                new THREE.SphereGeometry(0.07), this.materials.solid);
-                spheree.position.set(i, j + 3, k );
-                this.scene.add(spheree);
+                var particle = new THREE.Mesh(
+                    new THREE.SphereGeometry(0.2), this.materials.solid);
+                particle.position.set(i, j + 15, k );
+                particle.lastPosition = new THREE.Vector3(i, j + 15, k);
+                particle.forces = new THREE.Vector3();
+                particle.velocity = new THREE.Vector3(0, 0, 0);
+                this.particles.push(particle);
+                this.scene.add(particle);
             }
         }
         
     }
 
-    // // No need to call this:
-    // // this.sphere.geometry.computeBoundingSphere();
-    // // because it is done automatically by Three.js since it is needed for
-    // // frustrum culling
-    // this.sphereBBox = new THREE.Sphere(
-    //     this.sphere.position,
-    //     this.sphere.geometry.boundingSphere.radius);
-    // this.sphereShadow = Utils.createShadow(this.sphere, this.materials.shadow);
-
-
-    // // the object the user can control to check for collisions
-    // var ballMaterial = new THREE.MeshPhongMaterial( { color:0xffc0cb, transparent:true, opacity:0.7 } );
-    // this.ball = new THREE.Mesh(new THREE.SphereGeometry(0.5),
-    //     "Phong");
-
-    // this.ball.position.set(1, 1, 2);
-    // this.ballShadow = Utils.createShadow(this.ball, this.materials.shadow);
-    // this.ballBBox = new THREE.Sphere(
-    //     this.ball.position, this.ball.geometry.boundingSphere.radius);
-
-    // parameters = 
-    // {
-    //     x: 0, y: 30, z: 0,
-    //     color:  "#ff0000", // color (change "#" to "0x")
-    //     colorA: "#000000", // color (change "#" to "0x")
-    //     colorE: "#000033", // color (change "#" to "0x")
-    //     colorS: "#ffff00", // color (change "#" to "0x")
-    //     shininess: 30,
-    //     opacity: 1, 
-    //     visible: true,
-    //     material: "Phong",
-    //     reset: function() { resetSphere() }
-    // };
-
-    // // var sphereColor = gui.addColor( parameters, 'color' ).name('Color (Diffuse)');
-
-
-    // // var sphereGeometry = new THREE.SphereGeometry( 100, 50, 50 );
-    // // var sphereMaterial = new THREE.MeshPhongMaterial( { color:0xff0000, transparent:true, opacity:1 } );
-    // // this.sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
-    // // this.sphere.position.set(0,0,0);
-    // // this.scene.add(this.sphere);
-
-    // // add objects to the scene
-    // this.scene.add(this.ball);
-    // this.scene.add(this.knot);
-    // this.scene.add(this.sphere);
-
-
-
-    //  // this.scene.add(this.spheree);
-
-    // // add fake shadows to the scene
-    // this.scene.add(Utils.createShadow(this.knot, this.materials.shadow));
-    // this.scene.add(this.sphereShadow);
-    // this.scene.add(this.ballShadow);
-
     this.controls = new THREE.TransformControls(
         this.camera, this.renderer.domElement);
     this.controls.space = 'world';
-    // this.controls.attach(this.ball);
     this.scene.add(this.controls);
 
     this.timestamp = 0;
 };
 
-// Game.update = function (delta) {
-//     this.timestamp += delta;
+Game.update = function (delta) {
+    this.timestamp += delta;
+    console.log(delta);
 
-//     this.controls.update();
+    this.controls.update();
 
-//     // rotate the knot
-//     // this.knot.rotation.x += (Math.PI / 4) * delta;
-//     // this.knotBBox.setFromObject(this.knot); // re-calculate AABB
+    var i;
+    for (i = 0; i < this.particles.length; i++) {
+        this.particles[i].forces = new THREE.Vector3(0, 0, 0);
+    }
+    
+    console.log("hello world");
+    for (i = 0; i < this.particles.length; i++) {
+        console.log(this.particles[i].position);
+        var currParticle = this.particles[i];       
+        var e;
+        for (e = 0; e < this.external_accelerations.length; e++) {
+            this.particles[i].forces.add(this.external_accelerations[e]);
 
-//     // change sphere size
-//     // var scale = 0.25 + Math.abs(Math.sin(this.timestamp));
-//     // this.sphere.scale.set(scale, scale, scale);
-//     // re-calculate bounding sphere
-//     // this.sphereBBox.radius = this.sphere.geometry.boundingSphere.radius * scale;
-//     // update shadow size
-//     // Utils.updateShadow(this.sphereShadow, this.sphere);
+            var velocity = this.particles[i].velocity.add(this.particles[i].forces.multiplyScalar(delta));
+            var newPosition = this.particles[i].position.add(velocity.multiplyScalar(delta));
 
-//     // update the ball AABB position and shadow
-//     this.ballBBox.center.set(
-//         this.ball.position.x, this.ball.position.y, this.ball.position.z);
-//     Utils.updateShadow(this.ballShadow, this.ball);
+            this.particles[i].lastPosition.set(this.particles[i].position.x, this.particles[i].position.y, this.particles[i].position.z);//new position;
+            this.particles[i].position.set(newPosition.x, newPosition.y, newPosition.z);
+        }
+    }
 
-//     this.sphere.material =
-//         this.sphereBBox.intersectsSphere(this.ballBBox)
-//         ? this.materials.colliding
-//         : this.materials.solid;
+    // rotate the knot
+    // this.knot.rotation.x += (Math.PI / 4) * delta;
+    // this.knotBBox.setFromObject(this.knot); // re-calculate AABB
 
-//     this.knot.material = this.ballBBox.intersectsBox(this.knotBBox)
-//         ? this.materials.colliding
-//         : this.materials.solid;
-// };
+    // change sphere size
+    // var scale = 0.25 + Math.abs(Math.sin(this.timestamp));
+    // this.sphere.scale.set(scale, scale, scale);
+    // re-calculate bounding sphere
+    // this.sphereBBox.radius = this.sphere.geometry.boundingSphere.radius * scale;
+    // update shadow size
+    // Utils.updateShadow(this.sphereShadow, this.sphere);
+
+    // update the ball AABB position and shadow
+    // this.ballBBox.center.set(
+    //     this.ball.position.x, this.ball.position.y, this.ball.position.z);
+    // Utils.updateShadow(this.ballShadow, this.ball);
+
+    // this.sphere.material =
+    //     this.sphereBBox.intersectsSphere(this.ballBBox)
+    //     ? this.materials.colliding
+    //     : this.materials.solid;
+
+    // this.knot.material = this.ballBBox.intersectsBox(this.knotBBox)
+    //     ? this.materials.colliding
+    //     : this.materials.solid;
+};
