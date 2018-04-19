@@ -74,8 +74,8 @@ function init() {
                 var particle = new THREE.Mesh( sphereeGeo, ballMat );
                 particle.rotation.y = Math.PI;
                 particle.castShadow = false;
-                particle.position.set(i, j + 15, k);
-                particle.lastPosition = new THREE.Vector3(i, j + 15, k);
+                particle.position.set(i, j + 5, k);
+                particle.lastPosition = new THREE.Vector3(i, j + 5, k);
                 particle.forces = new THREE.Vector3();
                 particle.predPosition = new THREE.Vector3();
                 particle.velocity = new THREE.Vector3(0, 0, 0);
@@ -96,11 +96,9 @@ function init() {
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	container.appendChild( renderer.domElement );
 
-
 	var controls = new THREE.OrbitControls( camera, renderer.domElement );
 
 	window.addEventListener( 'resize', onWindowResize, false );
-
 
 	var gui = new dat.GUI();
 
@@ -170,31 +168,31 @@ function drawBoundingBox() {
 
 	var planeGeometry = new THREE.PlaneBufferGeometry( 20, 20 );
 	var planeMaterial = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide, transparent: true, opacity: 0.3} );
-	var bottomPlane = new THREE.Mesh(planeGeometry, planeMaterial);
-	bottomPlane.rotation.x = -Math.PI / 2.0;
-	scene.add(bottomPlane);
+	this.bottomPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	this.bottomPlane.rotation.x = -Math.PI / 2.0;
+	scene.add(this.bottomPlane);
 
-	var backPlane = new THREE.Mesh(planeGeometry, planeMaterial);
-	backPlane.rotation.y = -Math.PI / 2.0;
-	backPlane.translateY(10);
-	backPlane.translateZ(-10);
-	scene.add(backPlane);
+	// this.backPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.backPlane.rotation.y = -Math.PI / 2.0;
+	// this.backPlane.translateY(10);
+	// this.backPlane.translateZ(-10);
+	// scene.add(this.backPlane);
 
-	var frontPlane = new THREE.Mesh(planeGeometry, planeMaterial);
-	frontPlane.rotation.y = -Math.PI / 2.0;
-	frontPlane.translateY(10);
-	frontPlane.translateZ(10);
-	scene.add(frontPlane);
+	// this.frontPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.frontPlane.rotation.y = -Math.PI / 2.0;
+	// this.frontPlane.translateY(10);
+	// this.frontPlane.translateZ(10);
+	// scene.add(this.frontPlane);
 
-	var rightPlane = new THREE.Mesh(planeGeometry, planeMaterial);
-	rightPlane.translateY(10);
-	rightPlane.translateZ(-10);
-	scene.add(rightPlane);
+	// this.rightPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.rightPlane.translateY(10);
+	// this.rightPlane.translateZ(-10);
+	// scene.add(this.rightPlane);
 
-	var leftPlane = new THREE.Mesh(planeGeometry, planeMaterial);
-	leftPlane.translateY(10);
-	leftPlane.translateZ(10);
-	scene.add(leftPlane);
+	// this.leftPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.leftPlane.translateY(10);
+	// this.leftPlane.translateZ(10);
+	// scene.add(this.leftPlane);
 }
 
 function onWindowResize() {
@@ -239,9 +237,19 @@ function render() {
             var velocity = this.particles[i].velocity.add(this.particles[i].forces.multiplyScalar(delta));
             var newPosition = this.particles[i].position.add(velocity.multiplyScalar(delta));
 
-            this.particles[i].lastPosition.set(this.particles[i].position.x, this.particles[i].position.y, this.particles[i].position.z);//new position;
-            this.particles[i].position.set(newPosition.x, newPosition.y, newPosition.z);
-            this.particles[i].predPosition.set(newPosition.x, newPosition.y, newPosition.z);
+            // console.log(newPosition)
+            if (newPosition.y > 0.05) {
+            	this.particles[i].lastPosition.set(this.particles[i].position.x, this.particles[i].position.y, this.particles[i].position.z);//new position;
+	            this.particles[i].position.set(newPosition.x, newPosition.y, newPosition.z);
+	            this.particles[i].predPosition.set(newPosition.x, newPosition.y, newPosition.z);
+            } else {
+            	// console.log("hello")
+            	this.particles[i].position.set(newPosition.x, newPosition.y + 0.01, newPosition.z);
+            }
+
+            if (this.particles[i].position.y < 0.05) {
+            	console.log("why")
+            }
         }
     }
 
