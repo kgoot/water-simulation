@@ -111,16 +111,6 @@ function init() {
 		roughness: 0.5,
 		metalness: 1.0
 	});
-	// textureLoader.load( "js/textures/planets/earth_atmos_2048.jpg", function( map ) {
-	// 	map.anisotropy = 4;
-	// 	ballMat.map = map;
-	// 	ballMat.needsUpdate = true;
-	// } );
-	// textureLoader.load( "js/textures/planets/earth_specular_2048.jpg", function( map ) {
-	// 	map.anisotropy = 4;
-	// 	ballMat.metalnessMap = map;
-	// 	ballMat.needsUpdate = true;
-	// } );
 
 	var floorGeometry = new THREE.PlaneBufferGeometry( 20, 20 );
 	var floorMesh = new THREE.Mesh( floorGeometry, floorMat );
@@ -128,18 +118,25 @@ function init() {
 	floorMesh.rotation.x = -Math.PI / 2.0;
 	scene.add( floorMesh );
 
-	var i;
-    for (i = 0; i < 10; i++) {
+	this.external_accelerations = [new THREE.Vector3(0, -9.8*3, 0)];
+    this.particles = []; // new Array();
+
+    var i;
+    for (i = 0; i < 3; i++) {
         var j;
-        for (j = 0; j < 10; j++) {
+        for (j = 0; j < 3; j++) {
             var k;
-            for (k = 0; k < 10; k++) {
+            for (k = 0; k < 3; k++) {
                 var sphereeGeo = new THREE.SphereBufferGeometry( 0.05, 32, 32 );
-                var sphereeMesh = new THREE.Mesh( sphereeGeo, ballMat );
-                sphereeMesh.position.set( i/10, j/10, k/10 );
-				sphereeMesh.rotation.y = Math.PI;
-				sphereeMesh.castShadow = false;
-                this.scene.add(sphereeMesh);
+                var particle = new THREE.Mesh( sphereeGeo, ballMat );
+                particle.rotation.y = Math.PI;
+                particle.castShadow = false;
+                particle.position.set(i, j + 100, k);
+                particle.lastPosition = new THREE.Vector3(i, j + 10, k);
+                particle.forces = new THREE.Vector3();
+                particle.velocity = new THREE.Vector3(0, 0, 0);
+                this.particles.push(particle);
+                this.scene.add(particle);
             }
         }
         
@@ -193,6 +190,33 @@ function animate() {
 var previousShadowMap = false;
 
 function render() {
+	var time = Date.now() * 0.0005;
+	var delta = clock.getDelta();
+
+	bulbLight.position.y = 0.75 + 1.25;
+
+	renderer.render( scene, camera );
+
+    var i;
+    for (i = 0; i < this.particles.length; i++) {
+        this.particles[i].forces = new THREE.Vector3(0, 0, 0);
+    }
+
+    console.log("hello world");
+    for (i = 0; i < this.particles.length; i++) {
+        console.log(this.particles[i].position);
+        var currParticle = this.particles[i];       
+        var e;
+        for (e = 0; e < this.external_accelerations.length; e++) {
+            this.particles[i].forces.add(this.external_accelerations[e]);
+
+            var velocity = this.particles[i].velocity.add(this.particles[i].forces.multiplyScalar(delta));
+            var newPosition = this.particles[i].position.add(velocity.multiplyScalar(delta));
+
+            this.particles[i].lastPosition.set(this.particles[i].position.x, this.particles[i].position.y, this.particles[i].position.z);//new position;
+            this.particles[i].position.set(newPosition.x, newPosition.y, newPosition.z);
+        }
+    }
 
 	renderer.toneMappingExposure = Math.pow( params.exposure, 5.0 ); // to allow for very bright scenes.
 	renderer.shadowMap.enabled = params.shadows;
@@ -206,12 +230,6 @@ function render() {
 	bulbMat.emissiveIntensity = bulbLight.intensity / Math.pow( 0.02, 2.0 ); // convert from intensity to irradiance at bulb surface
 
 	hemiLight.intensity = hemiLuminousIrradiances[ params.hemiIrradiance ];
-	var time = Date.now() * 0.0005;
-	var delta = clock.getDelta();
-
-	bulbLight.position.y =  0.75 + 1.25;
-
-	renderer.render( scene, camera );
 
 	stats.update();
 
