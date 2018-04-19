@@ -1,6 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/karina/cs184/water-simulation
--- Using Cocoa for window creation
--- NanoGUI: using libc++ and libc++abi.
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/karina/cs184/water-simulation/cmake-build-debug

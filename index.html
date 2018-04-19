@@ -1,141 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>CS 184 Water Simulator</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="assets/css/main.css" />
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
-</head>
-<body>
-<!-- Cover Page -->
-<!-- TODO: add cover page when we write some code -->
-<!-- <section class="banner style5 orient-right content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-  <div class="content">
-    <h1 style="font-size: 52px">CS 184: Computer Graphics and Imaging</h1>
-    <h1>Project 3: PathTracer</h1>
-    <h3>By Karina Goot, CS184-abn</h3>
-    <br>
-    <ul class="actions horizontal">
-      <li><a href="#raygen" class="button small+fit smooth-scroll-middle">Part 1</a></li>
-      <li><a href="#bvh" class="button small+fit smooth-scroll-middle">Part 2</a></li>
-      <li><a href="#direct" class="button small+fit smooth-scroll-middle">Part 3</a></li>
-    </ul>
-    <ul class="actions horizontal">
-      <li><a href="#global" class="button small+fit smooth-scroll-middle">Part 4</a></li>
-      <li><a href="#adaptive" class="button small+fit smooth-scroll-middle">Part 5</a></li>
-    </ul>
-  </div>
-  <div class="image">
-    <img src="images/cover.png" alt="" />
-  </div>
-</section> -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>three.js webgl - lights - physical lights</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            body {
+                background-color: #000;
+                margin: 0px;
+                overflow: hidden;
+            }
 
+            #info {
+                position: absolute;
+                top: 0px; width: 100%;
+                color: #ffffff;
+                padding: 5px;
+                font-family: Monospace;
+                font-size: 13px;
+                text-align: center;
+            }
 
-<!-- Section 1 -->
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="raygen">
-  <div class="content">
-  	<center>
-  		<h1>CS 184: Computer Graphics and Imaging</h1>
-  		<h2>Final Project Proposal: 3D Fluid Interactions with Different Viscosities</h2>
-  		<br>
-  		<h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
-  		<h4>SIDs: 25289428, 25358477, 25033827</h4>
-  	</center>
-    <h2>Overview</h2>
+            a {
+                color: #ff0080;
+                text-decoration: none;
+            }
 
-    <p>Our project is a 3D fluid simulator in a confined space. It will simulate the interaction between fluids of different viscosities and physical properties. </p>
+            a:hover {
+                color: #0080ff;
+            }
+        </style>
+    </head>
+    <body>
 
+        <div id="container"></div>
 
-    <h2>Problem Description</h2>
+        <script src="js/build/three.js"></script>
+        <script src="js/lib/stats.min.js"></script>
+        <script src="js/lib/dat.gui.min.js"></script>
+        <script src="js/controls/OrbitControls.js"></script>
+        <script src="js/Detector.js"></script>
+        <script src="particle_demo.js"></script>
 
-    <p>We want to simulate the interaction of fluids of different properties with each other. This includes, how particles will interact with themselves and how particles will interact with different types of particles, which means we will have to account for different types of collisions not only between different particles but also between particles and the environment (e.g. the container).
-	</p>
-
-	<h2>Goals and Deliverables</h2>
-
-	<p><strong>Baseline goals</strong><br> Our objective is to simulate 3D models of water in containers of various sizes - including different objects. Afterwards we will use this simulation to expand on liquids of different viscosities - oils and metallic particles.
-	</p>
-
-	<p><strong>Baseline deliverables </strong><br>
-		Here is an outline of our objectives:
-		<ul>
-			<li>We want to simulate the forces for particle to particle collisions of water and fluids of different viscosities. We will have active demos that pour water and <a href="https://www.michael-smith-engineers.co.uk/resources/useful-info/approximate-viscosities-of-common-liquids-by-type">different viscosities</a> oils into a free container, and into containers with other objects in them. </li>
-			<li>We will create a demo of oil being poured into water and how it could affect objects within the scene to capture oil-water interactions in a scene.</li>
-			<li>We will create a demo of water and and dye interacting with each other to simulate color changes and blending over time. </li>
-			<li>We will determine the accuracy of our water simulations and different liquid interactions based off <a href="http://www.escapemotions.com/experiments/fluid_water_3/"> previous known implementations</a>.</li>
-			<li>We will test the animation time by timing how long each render takes to reach equilibrium - ie there is no more motion within the liquid. This will be tested by comparing the changes in maximum height for all the water particles. If the height no longer changes within some defined delta then we can conclude that the simulation has reached equilibrium.</li>
-		</ul>
-		Through these simulation, we will be able to see how certain liquids interact with other liquids and/or with other objects, so that we can simulate real world situations before they occur. <br><br>
-
-		<strong>Aspirational Goals</strong> <br>
-		In addition to to goals outlined above, we have some aspirational goals as well which include expanding this system to be interactive so that users can pour their own liquid into the scene, stir the liquid, and move the liquid around using their mouse. <br><br>
-
-		<strong>Aspirational Deliverables</strong>
-		<ul>
-			<li>Create an interactive simulation where we use the mouse to move through the liquid. We will also have keyboard keys to activate a mouse stirrer, or to activate liquids dropping from the mouse.</li>
-			<li>Include demonstrations and simulations on how the scenarios would react to change in real-time</li>
-		</ul>
-
-		<strong>Measuring Quality and Performance</strong> <br>
-		We will mainly use qualitative methods to assess the quality and accuracy of our system. We will first get a video/demonstration with real world objects or a verified interactive simulation and take note of the key characteristics of the demonstration/simulation (e.g. the way the particles interact with the wall at what speed/rate of acceleration). We will then observe how many of these characteristics are met by our animation. Lastly, we will take note of the differences between our simulation and the verified simulations online.
-	</p>
-
-	<h2>Schedule</h2>
-	<p>We are proposing the following schedule for our final project:</p>
-
-	<p><strong>Week 1:</strong><br>
-		During the first week we will be working on getting the box meshed set up, creating object meshes and working through particle definitions. <br>
-		We will also be working with getting acquainted with all the online resources and reading up on the liquid simulation libraries in C++.
-	</p>
-
-	<p><strong>Week 2:</strong><br>
-		We will spend the second week working on gravity and normal forces and integrating these physical phenomena with our particles and meshes.
-	</p>
-
-	<p><strong>Week 3:</strong><br>
-		The third week will be dedicated to collisions. We will work on particle to particle collision and particle to surface collisions.<br> During this week we will only deal with same particles (ie oil with oil and water with water)
-	</p>
-
-	<p><strong>Week 4:</strong><br>
-		During this week, we will implement particle to particle collisions between different particles in order to simulate interactions of objects with different viscosities. <br>
-		We will also implement mouse interactivity with our simulator to include stirring, pouring and dropping particles into the scene (one of our stretch goals).
-	</p>
-
-	<h2>Resources</h2>
-	<p>From our initial research, these resources seem like great starting points for our final project:</p>
-	<ul>
-		<li><a href="http://google.github.io/liquidfun/ ">Liquid simulation library in C++</a></li>
-		<li><a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position based fluid dynamics math and equations</a></li>
-		<li><a href="https://www.michael-smith-engineers.co.uk/resources/useful-info/approximate-viscosities-of-common-liquids-by-type ">Viscosities of common liquids by type</a></li>
-		<li><a href="">Open source library for physically-based simulations of liquids</a></li>
-		<li><a href="http://www.escapemotions.com/experiments/fluid_water_3/">Interactive liquids demo</a></li>
-		<li><a href="http://austinhle.com/cs184proj-report">Previous work with water simulations</a></li>
-	</ul>
-
-	We are looking forward to building out this liquid simulator! ^_^ <br> <br>
-  </div>
-</section>
-
-        
-<!-- Footer -->
-<footer class="wrapper style3 align-center">
-  <div class="inner">
-    <!-- <ul class="icons">
-      <li><a href="https://www.facebook.com/kgoot" class="icon style2 fa-a"><span class="label">Facebook</span></a></li>
-      <li><a href="https://www.instagram.com/thegootlife/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-      <li><a href="https://www.linkedin.com/in/kgoot/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-      <li><a href="mailto:kgoot@berkeley.edu" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-      <li><a href="https://kgoot.github.io" class="icon style2 fa-link"><span class="label">Website</span></a></li>
-    </ul> -->
-    <p style="font-size: 14px">&copy; Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a>. HTML Template By: <a href="https://html5up.net">HTML5 UP</a>.</p>
-  </div>
-</footer>
-
-</div>
-</body>
+    </body>
 </html>

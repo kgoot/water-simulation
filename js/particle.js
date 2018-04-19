@@ -1,27 +1,105 @@
-// expand THREE.js Sphere to support collision tests versus Box3
-// we are creating a vector outside the method scope to avoid spawning a new
-// instance of Vector3 in every check
-THREE.Sphere.__closest = new THREE.Vector3();
-THREE.Sphere.prototype.intersectsBox = function (box) {
-    // get box closest point to sphere center by clamping
-    THREE.Sphere.__closest.set(this.center.x, this.center.y, this.center.z);
-    THREE.Sphere.__closest.clamp(box.min, box.max);
+// THREE.Sphere.__closest = new THREE.Vector3();
+// THREE.Sphere.prototype.intersectsBox = function (box) {
+// // get box closest point to sphere center by clamping
+// THREE.Sphere.__closest.set(this.center.x, this.center.y, this.center.z);
+// THREE.Sphere.__closest.clamp(box.min, box.max);
 
-    var distance =  this.center.distanceToSquared(THREE.Sphere.__closest);
-    return distance < (this.radius * this.radius);
-};
+// var distance =  this.center.distanceToSquared(THREE.Sphere.__closest);
+// return distance < (this.radius * this.radius);
+// };
 
 Game.init = function () {
     this.debug = false;
 
-    // this.knot = new THREE.Mesh(
-    //     new THREE.TorusKnotGeometry(0.5, 0.1), this.materials.solid);
-    // this.knot.position.set(-3, 2, 1);
-    // this.knotBBox = new THREE.Box3(new THREE.Vector3(), new THREE.Vector3());
+    var container = document.getElementById( 'container' );
 
-    // this.sphere = new THREE.Mesh(
-    //     new THREE.SphereGeometry(1), this.materials.solid);
-    // this.sphere.position.set(2, 2, 0);
+    stats = new Stats();
+    container.appendChild( stats.dom );
+
+
+    camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 100 );
+    camera.position.x = -4;
+    camera.position.z = 4;
+    camera.position.y = 2;
+
+    scene = new THREE.Scene();
+
+    var bulbGeometry = new THREE.SphereBufferGeometry( 0.02, 16, 8 );
+    bulbLight = new THREE.PointLight( 0xffee88, 1, 100, 2 );
+
+    bulbMat = new THREE.MeshStandardMaterial( {
+        emissive: 0xffffee,
+        emissiveIntensity: 1,
+        color: 0x000000
+    });
+    bulbLight.add( new THREE.Mesh( bulbGeometry, bulbMat ) );
+    bulbLight.position.set( 0, 2, 0 );
+    bulbLight.castShadow = true;
+    scene.add( bulbLight );
+
+    hemiLight = new THREE.HemisphereLight( 0xddeeff, 0x0f0e0d, 0.02 );
+    scene.add( hemiLight );
+
+    floorMat = new THREE.MeshStandardMaterial( {
+        roughness: 0.8,
+        color: 0xffffff,
+        metalness: 0.2,
+        bumpScale: 0.0005
+    });
+    var textureLoader = new THREE.TextureLoader();
+    textureLoader.load( "js/textures/hardwood2_diffuse.jpg", function( map ) {
+        map.wrapS = THREE.RepeatWrapping;
+        map.wrapT = THREE.RepeatWrapping;
+        map.anisotropy = 4;
+        map.repeat.set( 10, 24 );
+        floorMat.map = map;
+        floorMat.needsUpdate = true;
+    } );
+    textureLoader.load( "js/textures/hardwood2_bump.jpg", function( map ) {
+        map.wrapS = THREE.RepeatWrapping;
+        map.wrapT = THREE.RepeatWrapping;
+        map.anisotropy = 4;
+        map.repeat.set( 10, 24 );
+        floorMat.bumpMap = map;
+        floorMat.needsUpdate = true;
+    } );
+    textureLoader.load( "js/textures/hardwood2_roughness.jpg", function( map ) {
+        map.wrapS = THREE.RepeatWrapping;
+        map.wrapT = THREE.RepeatWrapping;
+        map.anisotropy = 4;
+        map.repeat.set( 10, 24 );
+        floorMat.roughnessMap = map;
+        floorMat.needsUpdate = true;
+    } );
+
+    ballMat = new THREE.MeshStandardMaterial( {
+        color: 0xffffff,
+        roughness: 0.5,
+        metalness: 1.0
+    });
+    textureLoader.load( "js/textures/planets/earth_atmos_2048.jpg", function( map ) {
+        map.anisotropy = 4;
+        ballMat.map = map;
+        ballMat.needsUpdate = true;
+    } );
+    textureLoader.load( "js/textures/planets/earth_specular_2048.jpg", function( map ) {
+        map.anisotropy = 4;
+        ballMat.metalnessMap = map;
+        ballMat.needsUpdate = true;
+    } );
+
+    var floorGeometry = new THREE.PlaneBufferGeometry( 20, 20 );
+    var floorMesh = new THREE.Mesh( floorGeometry, floorMat );
+    floorMesh.receiveShadow = true;
+    floorMesh.rotation.x = -Math.PI / 2.0;
+    scene.add( floorMesh );
+
+    var ballGeometry = new THREE.SphereBufferGeometry( 0.05, 32, 32 );
+    var ballMesh = new THREE.Mesh( ballGeometry, ballMat );
+    ballMesh.position.set( 1, 0.5, 1 );
+    ballMesh.rotation.y = Math.PI;
+    ballMesh.castShadow = true;
+    scene.add( ballMesh );
 
     var i;
     for (i = 0; i < 3; i++) {
@@ -29,110 +107,85 @@ Game.init = function () {
         for (j = 0; j < 3; j++) {
             var k;
             for (k = 0; k < 3; k++) {
-                // for 
-                var spheree = new THREE.Mesh(
-                new THREE.SphereGeometry(0.07), this.materials.solid);
-                spheree.position.set(i, j + 3, k );
-                this.scene.add(spheree);
+                var sphereeGeo = new THREE.SphereBufferGeometry( 0.05, 32, 32 );
+                var sphereeMesh = new THREE.Mesh( sphereeGeo, ballMat );
+                sphereeMesh.position.set( i, j, k );
+                sphereeMesh.rotation.y = Math.PI;
+                sphereeMesh.castShadow = true;
+                this.scene.add(sphereeMesh);
             }
         }
         
     }
 
-    // // No need to call this:
-    // // this.sphere.geometry.computeBoundingSphere();
-    // // because it is done automatically by Three.js since it is needed for
-    // // frustrum culling
-    // this.sphereBBox = new THREE.Sphere(
-    //     this.sphere.position,
-    //     this.sphere.geometry.boundingSphere.radius);
-    // this.sphereShadow = Utils.createShadow(this.sphere, this.materials.shadow);
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.physicallyCorrectLights = true;
+    renderer.gammaInput = true;
+    renderer.gammaOutput = true;
+    renderer.shadowMap.enabled = true;
+    renderer.toneMapping = THREE.ReinhardToneMapping;
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    container.appendChild( renderer.domElement );
 
 
-    // // the object the user can control to check for collisions
-    // var ballMaterial = new THREE.MeshPhongMaterial( { color:0xffc0cb, transparent:true, opacity:0.7 } );
-    // this.ball = new THREE.Mesh(new THREE.SphereGeometry(0.5),
-    //     "Phong");
+    var controls = new THREE.OrbitControls( camera, renderer.domElement );
 
-    // this.ball.position.set(1, 1, 2);
-    // this.ballShadow = Utils.createShadow(this.ball, this.materials.shadow);
-    // this.ballBBox = new THREE.Sphere(
-    //     this.ball.position, this.ball.geometry.boundingSphere.radius);
-
-    // parameters = 
-    // {
-    //     x: 0, y: 30, z: 0,
-    //     color:  "#ff0000", // color (change "#" to "0x")
-    //     colorA: "#000000", // color (change "#" to "0x")
-    //     colorE: "#000033", // color (change "#" to "0x")
-    //     colorS: "#ffff00", // color (change "#" to "0x")
-    //     shininess: 30,
-    //     opacity: 1, 
-    //     visible: true,
-    //     material: "Phong",
-    //     reset: function() { resetSphere() }
-    // };
-
-    // // var sphereColor = gui.addColor( parameters, 'color' ).name('Color (Diffuse)');
+    window.addEventListener( 'resize', onWindowResize, false );
 
 
-    // // var sphereGeometry = new THREE.SphereGeometry( 100, 50, 50 );
-    // // var sphereMaterial = new THREE.MeshPhongMaterial( { color:0xff0000, transparent:true, opacity:1 } );
-    // // this.sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
-    // // this.sphere.position.set(0,0,0);
-    // // this.scene.add(this.sphere);
+    var gui = new dat.GUI();
 
-    // // add objects to the scene
-    // this.scene.add(this.ball);
-    // this.scene.add(this.knot);
-    // this.scene.add(this.sphere);
-
-
-
-    //  // this.scene.add(this.spheree);
-
-    // // add fake shadows to the scene
-    // this.scene.add(Utils.createShadow(this.knot, this.materials.shadow));
-    // this.scene.add(this.sphereShadow);
-    // this.scene.add(this.ballShadow);
-
-    this.controls = new THREE.TransformControls(
-        this.camera, this.renderer.domElement);
-    this.controls.space = 'world';
-    // this.controls.attach(this.ball);
-    this.scene.add(this.controls);
-
-    this.timestamp = 0;
+    gui.add( params, 'hemiIrradiance', Object.keys( hemiLuminousIrradiances ) );
+    gui.add( params, 'bulbPower', Object.keys( bulbLuminousPowers ) );
+    gui.add( params, 'exposure', 0, 1 );
+    gui.add( params, 'shadows' );
+    gui.open();
 };
 
-// Game.update = function (delta) {
-//     this.timestamp += delta;
+function onWindowResize() {
 
-//     this.controls.update();
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
 
-//     // rotate the knot
-//     // this.knot.rotation.x += (Math.PI / 4) * delta;
-//     // this.knotBBox.setFromObject(this.knot); // re-calculate AABB
+    renderer.setSize( window.innerWidth, window.innerHeight );
 
-//     // change sphere size
-//     // var scale = 0.25 + Math.abs(Math.sin(this.timestamp));
-//     // this.sphere.scale.set(scale, scale, scale);
-//     // re-calculate bounding sphere
-//     // this.sphereBBox.radius = this.sphere.geometry.boundingSphere.radius * scale;
-//     // update shadow size
-//     // Utils.updateShadow(this.sphereShadow, this.sphere);
+}
 
-//     // update the ball AABB position and shadow
-//     this.ballBBox.center.set(
-//         this.ball.position.x, this.ball.position.y, this.ball.position.z);
-//     Utils.updateShadow(this.ballShadow, this.ball);
+//
 
-//     this.sphere.material =
-//         this.sphereBBox.intersectsSphere(this.ballBBox)
-//         ? this.materials.colliding
-//         : this.materials.solid;
+function animate() {
 
-//     this.knot.material = this.ballBBox.intersectsBox(this.knotBBox)
-//         ? this.materials.colliding
-//         : this.materials.solid;
-// };
+    requestAnimationFrame( animate );
+
+    render();
+
+}
+
+var previousShadowMap = false;
+
+function render() {
+
+    renderer.toneMappingExposure = Math.pow( params.exposure, 5.0 ); // to allow for very bright scenes.
+    renderer.shadowMap.enabled = params.shadows;
+    bulbLight.castShadow = params.shadows;
+    if( params.shadows !== previousShadowMap ) {
+        ballMat.needsUpdate = true;
+        floorMat.needsUpdate = true;
+        previousShadowMap = params.shadows;
+    }
+    bulbLight.power = bulbLuminousPowers[ params.bulbPower ];
+    bulbMat.emissiveIntensity = bulbLight.intensity / Math.pow( 0.02, 2.0 ); // convert from intensity to irradiance at bulb surface
+
+    hemiLight.intensity = hemiLuminousIrradiances[ params.hemiIrradiance ];
+    var time = Date.now() * 0.0005;
+    var delta = clock.getDelta();
+
+    bulbLight.position.y =  0.75 + 1.25;
+
+    renderer.render( scene, camera );
+
+    stats.update();
+
+}
