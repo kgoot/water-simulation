@@ -71,7 +71,7 @@ function init() {
 	bulbLight.castShadow = true;
 	scene.add( bulbLight );
 
-	hemiLight = new THREE.HemisphereLight( 0xddeeff, 0x0f0e0d, 0.02 );
+	hemiLight = new THREE.HemisphereLight( 0xddeeff, 0x0f0e0d, 10.0 );
 	scene.add( hemiLight );
 
 	floorMat = new THREE.MeshStandardMaterial( {
@@ -127,7 +127,7 @@ function init() {
         for (j = 0; j < 10; j++) {
             var k;
             for (k = 0; k < 10; k++) {
-                var radius = 0.05;
+                var radius = 0.5; //TODO
                 var sphereeGeo = new THREE.SphereBufferGeometry( radius, 32, 32 );
                 var particle = new THREE.Mesh( sphereeGeo, ballMat );
                 particle.rotation.y = Math.PI;
@@ -266,9 +266,24 @@ function buildNeighborMap() {
     }
 }
 
-function findNeighbors(currParticle) { //idk if this works or not
-    var hashPos = hashPosition(currParticle.x, currParticle.y, currParticle.z, currParticle.radius);
-    return this.neighborMap[hashPos];
+function findNeighbors(currParticle) { // need to check all surrounding cells and get hash of each 27
+    // var hashPos = hashPosition(currParticle.x, currParticle.y, currParticle.z, currParticle.radius);
+    var neighbors = [];
+    var i;
+    for (i = -1; i <= 1; i++) {
+        var j;
+        for (j = -1; j <= 1; j++) {
+            var k;
+            for (k = -1; k <= 1; k++) {
+                var hashPos = hashPosition(currParticle.x + i, currParticle.y + j, currParticle.z + k, currParticle.radius);
+                if (hashPos in this.neighborMap) {
+                    neighbors.push(this.neighborMap[hashPos]);
+                }
+            }
+        }
+    }
+    // return this.neighborMap[hashPos];
+    return neighbors;
 }
 
 
@@ -292,33 +307,34 @@ function findConstraintSpiky(particle, neighbor, h) {
     return 0;
 }
 
-function findGradient(particle, neighbors, h, p0) {
+function findGradient(particle, neighbors, h, p0) { // might need neighbor and non-neighbor cases
     var total = 0;
-    var i;
-    for (i = 0; i < neighbors.length; i++) {
-        total += findConstraintSpiky(particle, neighbors[i], h);
+    var j;
+    for (j = 0; j < neighbors.length; j++) {
+        total += findConstraintSpiky(particle, neighbors[j], h);
     }
 
-    if (p0 != 0) {
-        return total / p0;
-    }
+    // if (p0 != 0) {
+    //     return total / p0;
+    // }
+    return total / p0;
 }
 
 function findLambda(particle, neighbors, h, p0, epsilon) {
     var Ci = 0;
-    var i;
-    for (i = 0; i < neighbors.length; i++) {
-        Ci += findConstraintPoly6(particle, neighbors[i], h);
+    var j;
+    for (j = 0; j < neighbors.length; j++) {
+        Ci += findConstraintPoly6(particle, neighbors[j], h);
     }
     Ci = Ci / p0 - 1.0;
 
     var gradient = epsilon;
     var k;
-    for (k = 0; k < this.particles.length; k++) {
+    for (k = 0; k < this.particles.length; k++) { // TODO: should this be neighbors only, if not then, we need 2 cases in gradient
         gradient += findGradient(this.particles[k], findNeighbors(this.particles[k]), h, p0);
     }
 
-    return -Ci / gradient
+    return -Ci / Math.pow(Math.abs(gradient), 2.0);
 }
 
 
