@@ -118,21 +118,22 @@ function init() {
 	floorMesh.rotation.x = -Math.PI / 2.0;
 	scene.add( floorMesh );
 
-	this.external_accelerations = [new THREE.Vector3(0, -9.8*3, 0)];
+	this.external_accelerations = [new THREE.Vector3(0, -9.8 * 3, 0)];
     this.particles = []; // new Array();
 
     var i;
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 10; i++) {
         var j;
-        for (j = 0; j < 3; j++) {
+        for (j = 0; j < 10; j++) {
             var k;
-            for (k = 0; k < 3; k++) {
-                var sphereeGeo = new THREE.SphereBufferGeometry( 0.05, 32, 32 );
+            for (k = 0; k < 10; k++) {
+                var radius = 0.05;
+                var sphereeGeo = new THREE.SphereBufferGeometry( radius, 32, 32 );
                 var particle = new THREE.Mesh( sphereeGeo, ballMat );
                 particle.rotation.y = Math.PI;
                 particle.castShadow = false;
-                particle.position.set(i, j + 100, k);
-                particle.lastPosition = new THREE.Vector3(i, j + 10, k);
+                particle.position.set(i * radius * 2, j * radius * 2 + 15, k * radius * 2);
+                particle.lastPosition = new THREE.Vector3(i * radius * 2, j * radius * 2 + 15, k * radius * 2);
                 particle.forces = new THREE.Vector3();
                 particle.velocity = new THREE.Vector3(0, 0, 0);
                 this.particles.push(particle);
@@ -193,7 +194,7 @@ function render() {
 	var time = Date.now() * 0.0005;
 	var delta = clock.getDelta();
 
-	bulbLight.position.y = 0.75 + 1.25;
+	bulbLight.position.y = 10;
 
 	renderer.render( scene, camera );
 
@@ -202,21 +203,28 @@ function render() {
         this.particles[i].forces = new THREE.Vector3(0, 0, 0);
     }
 
-    console.log("hello world");
+    // Apply external forces (i.e. gravity)
     for (i = 0; i < this.particles.length; i++) {
-        console.log(this.particles[i].position);
+        // console.log(this.particles[i].position);
         var currParticle = this.particles[i];       
         var e;
         for (e = 0; e < this.external_accelerations.length; e++) {
-            this.particles[i].forces.add(this.external_accelerations[e]);
+            currParticle.forces.add(this.external_accelerations[e]);
 
-            var velocity = this.particles[i].velocity.add(this.particles[i].forces.multiplyScalar(delta));
-            var newPosition = this.particles[i].position.add(velocity.multiplyScalar(delta));
+            var velocity = currParticle.velocity.add(currParticle.forces.multiplyScalar(delta));
+            var newPosition = currParticle.position.add(velocity.multiplyScalar(delta));
 
-            this.particles[i].lastPosition.set(this.particles[i].position.x, this.particles[i].position.y, this.particles[i].position.z);//new position;
+            this.particles[i].lastPosition.set(currParticle.position.x, currParticle.position.y, currParticle.position.z);//new position;
             this.particles[i].position.set(newPosition.x, newPosition.y, newPosition.z);
         }
     }
+
+    // Build this.neighborMap.
+    buildNeighborMap();
+
+    // Enforcing incompressibility.
+
+
 
 	renderer.toneMappingExposure = Math.pow( params.exposure, 5.0 ); // to allow for very bright scenes.
 	renderer.shadowMap.enabled = params.shadows;
@@ -234,3 +242,84 @@ function render() {
 	stats.update();
 
 }
+
+
+function hashPosition(x, y, z, radius) {
+    return Math.floor((x/(2*radius) * 31 + y/(2*radius)) * 31 + z/(2*radius));
+}
+
+
+function buildNeighborMap() {
+    this.neighborMap = {};
+
+    var i;
+    for (i = 0; i < this.particles.length; i++) {
+        var currParticle = this.particles[i];
+        var hashPos = hashPosition(currParticle.x, currParticle.y, currParticle.z, currParticle.radius);
+        if (hashPos in this.neighborMap) {
+            this.neighborMap[hashPos] = currParticle; //.push({key, value})
+        } else {
+            var hashParticles = [];
+            hashParticles.push(currParticle);
+            this.neighborMap[hashPos].push(hashParticles);
+        }
+    }
+}
+
+function findNeighbors(currParticle) { //idk if this works or not
+    var hashPos = hashPosition(currParticle.x, currParticle.y, currParticle.z, currParticle.radius);
+    return this.neighborMap[hashPos];
+}
+
+
+function findConstraintPoly6(particle, neighbor, h) {
+    var total = 0;
+    var rVector = particle.position.sub(neighbor.position);
+    var r = Math.sqrt(Math.pow(rVector.x, 2.0) + Math.pow(rVector.y, 2.0) + Math.pow(rVector.z, 2.0));
+    if (0 <= r || r <= h) {
+        return 315 / (64 * Math.PI * Math.pow(h, 9.0)) * Math.pow(Math.pow(h, 2.0) - Math.pow(r, 2.0), 3.0);
+    }
+    return 0;
+}
+
+function findConstraintSpiky(particle, neighbor, h) {
+    var total = 0;
+    var rVector = particle.position.sub(neighbor.position);
+    var r = Math.sqrt(Math.pow(rVector.x, 2.0) + Math.pow(rVector.y, 2.0) + Math.pow(rVector.z, 2.0));
+    if (0 <= r || r <= h) {
+        return 15 / (Math.PI * Math.pow(h, 6.0)) * Math.pow(h - r, 3.0);
+    }
+    return 0;
+}
+
+function findGradient(particle, neighbors, h, p0) {
+    var total = 0;
+    var i;
+    for (i = 0; i < neighbors.length; i++) {
+        total += findConstraintSpiky(particle, neighbors[i], h);
+    }
+
+    if (p0 != 0) {
+        return total / p0;
+    }
+}
+
+function findLambda(particle, neighbors, h, p0, epsilon) {
+    var Ci = 0;
+    var i;
+    for (i = 0; i < neighbors.length; i++) {
+        Ci += findConstraintPoly6(particle, neighbors[i], h);
+    }
+    Ci = Ci / p0 - 1.0;
+
+    var gradient = epsilon;
+    var k;
+    for (k = 0; k < this.particles.length; k++) {
+        gradient += findGradient(this.particles[k], findNeighbors(this.particles[k]), h, p0);
+    }
+
+    return -Ci / gradient
+}
+
+
+
