@@ -58,6 +58,58 @@ function init() {
 
 	scene = new THREE.Scene();
 
+	drawLight();
+	drawBoundingBox();
+
+	this.external_accelerations = [new THREE.Vector3(0, -9.8*3, 0)];
+    this.particles = []; // new Array();
+
+    var i;
+    for (i = 0; i < 3; i++) {
+        var j;
+        for (j = 0; j < 3; j++) {
+            var k;
+            for (k = 0; k < 3; k++) {
+                var sphereeGeo = new THREE.SphereBufferGeometry( 0.05, 32, 32 );
+                var particle = new THREE.Mesh( sphereeGeo, ballMat );
+                particle.rotation.y = Math.PI;
+                particle.castShadow = false;
+                particle.position.set(i, j + 5, k);
+                particle.lastPosition = new THREE.Vector3(i, j + 5, k);
+                particle.forces = new THREE.Vector3();
+                particle.predPosition = new THREE.Vector3();
+                particle.velocity = new THREE.Vector3(0, 0, 0);
+                this.particles.push(particle);
+                this.scene.add(particle);
+            }
+        }
+        
+    }
+
+	renderer = new THREE.WebGLRenderer();
+	renderer.physicallyCorrectLights = true;
+	renderer.gammaInput = true;
+	renderer.gammaOutput = true;
+	renderer.shadowMap.enabled = true;
+	renderer.toneMapping = THREE.ReinhardToneMapping;
+	renderer.setPixelRatio( window.devicePixelRatio );
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	container.appendChild( renderer.domElement );
+
+	var controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+	window.addEventListener( 'resize', onWindowResize, false );
+
+	var gui = new dat.GUI();
+
+	gui.add( params, 'hemiIrradiance', Object.keys( hemiLuminousIrradiances ) );
+	gui.add( params, 'bulbPower', Object.keys( bulbLuminousPowers ) );
+	gui.add( params, 'exposure', 0, 1 );
+	gui.add( params, 'shadows' );
+	gui.open();
+}
+
+function drawLight() {
 	var bulbGeometry = new THREE.SphereBufferGeometry( 0.02, 16, 8 );
 	bulbLight = new THREE.PointLight( 0xffee88, 1, 100, 2 );
 
@@ -73,7 +125,9 @@ function init() {
 
 	hemiLight = new THREE.HemisphereLight( 0xddeeff, 0x0f0e0d, 10.0 );
 	scene.add( hemiLight );
+}
 
+function drawBoundingBox() {
 	floorMat = new THREE.MeshStandardMaterial( {
 		roughness: 0.8,
 		color: 0xffffff,
@@ -167,6 +221,34 @@ function init() {
 	gui.add( params, 'exposure', 0, 1 );
 	gui.add( params, 'shadows' );
 	gui.open();
+
+	var planeGeometry = new THREE.PlaneBufferGeometry( 20, 20 );
+	var planeMaterial = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide, transparent: true, opacity: 0.3} );
+	this.bottomPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	this.bottomPlane.rotation.x = -Math.PI / 2.0;
+	scene.add(this.bottomPlane);
+
+	// this.backPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.backPlane.rotation.y = -Math.PI / 2.0;
+	// this.backPlane.translateY(10);
+	// this.backPlane.translateZ(-10);
+	// scene.add(this.backPlane);
+
+	// this.frontPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.frontPlane.rotation.y = -Math.PI / 2.0;
+	// this.frontPlane.translateY(10);
+	// this.frontPlane.translateZ(10);
+	// scene.add(this.frontPlane);
+
+	// this.rightPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.rightPlane.translateY(10);
+	// this.rightPlane.translateZ(-10);
+	// scene.add(this.rightPlane);
+
+	// this.leftPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+	// this.leftPlane.translateY(10);
+	// this.leftPlane.translateZ(10);
+	// scene.add(this.leftPlane);
 }
 
 function onWindowResize() {
@@ -178,7 +260,6 @@ function onWindowResize() {
 
 }
 
-//
 
 function animate() {
 
@@ -203,9 +284,9 @@ function render() {
         this.particles[i].forces = new THREE.Vector3(0, 0, 0);
     }
 
-    // Apply external forces (i.e. gravity)
+
     for (i = 0; i < this.particles.length; i++) {
-        // console.log(this.particles[i].position);
+
         var currParticle = this.particles[i];       
         var e;
         for (e = 0; e < this.external_accelerations.length; e++) {
@@ -214,8 +295,20 @@ function render() {
             var velocity = currParticle.velocity.add(currParticle.forces.multiplyScalar(delta));
             var newPosition = currParticle.position.add(velocity.multiplyScalar(delta));
 
-            this.particles[i].lastPosition.set(currParticle.position.x, currParticle.position.y, currParticle.position.z);//new position;
-            this.particles[i].position.set(newPosition.x, newPosition.y, newPosition.z);
+            // console.log(newPosition)
+            if (newPosition.y > 0.05) {
+            	this.particles[i].lastPosition.set(this.particles[i].position.x, this.particles[i].position.y, this.particles[i].position.z);//new position;
+	            this.particles[i].position.set(newPosition.x, newPosition.y, newPosition.z);
+	            this.particles[i].predPosition.set(newPosition.x, newPosition.y, newPosition.z);
+            } else {
+            	// console.log("hello")
+            	this.particles[i].position.set(newPosition.x, newPosition.y + 0.01, newPosition.z);
+            }
+
+            if (this.particles[i].position.y < 0.05) {
+            	console.log("why")
+            }
+
         }
     }
 
@@ -231,7 +324,6 @@ function render() {
 	bulbLight.castShadow = params.shadows;
 	if( params.shadows !== previousShadowMap ) {
 		ballMat.needsUpdate = true;
-		floorMat.needsUpdate = true;
 		previousShadowMap = params.shadows;
 	}
 	bulbLight.power = bulbLuminousPowers[ params.bulbPower ];
