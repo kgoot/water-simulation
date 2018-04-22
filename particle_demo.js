@@ -125,6 +125,25 @@ function drawLight() {
 
 	hemiLight = new THREE.HemisphereLight( 0xddeeff, 0x0f0e0d, 10.0 );
 	scene.add( hemiLight );
+
+
+    //fix this code bs
+
+    // var bulbGeometry = new THREE.SphereBufferGeometry( 0.02, 16, 8 );
+    // bulbLight = new THREE.PointLight( 0xffee88, 1, 100, 2 );
+
+    // bulbMat = new THREE.MeshStandardMaterial( {
+    //     emissive: 0xffffee,
+    //     emissiveIntensity: 1,
+    //     color: 0x000000
+    // });
+    // bulbLight.add( new THREE.Mesh( bulbGeometry, bulbMat ) );
+    // bulbLight.position.set( -5, 10, -5 );
+    // bulbLight.castShadow = true;
+    // scene.add( bulbLight );
+
+    // hemiLight = new THREE.HemisphereLight( 0xddeeff, 0x0f0e0d, 10.0 );
+    // scene.add( hemiLight );
 }
 
 function drawBoundingBox() {

@@ -23,6 +23,10 @@ public:
 private:
     pbf::Particles _particles;
     Plane _bottom;
+    Plane _left;
+    Plane _right;
+    Plane _front;
+    Plane _back;
 
     Camera _camera;
     Scene _scene;

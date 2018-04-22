@@ -18,6 +18,7 @@ struct Particle {
 
     float mass;
 
+    double radius;
 
     Particle() :
         pos(0.f), vel(0.f)

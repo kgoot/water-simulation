@@ -38,11 +38,23 @@ public:
 
     void clear();
 
+    int hash_position(Particle p);
+
+    void build_spatial_map();
+
+    std::vector<Particle> find_neighbors(Particle p);
+
+    double wPoly6(Particle p, Particle neighbor, double h);
+
+    glm::vec3 wGradientSpiky(Particle p, Particle neighbor, double h);
+
+    double Particles::rho(Particle p, std::vector<Particle *> * neighbors);
+
 private:
     Buffer _vbo;
     VertexArray _vao;
     std::vector<Particle> _particles;
-    std::map<int, Particle *> _spacial_hash;
+    std::map<int, std::vector<Particle *> *> _spatial_map;
     Program _program;
 
     bool _is_collidable = false;

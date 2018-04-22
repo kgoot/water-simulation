@@ -19,10 +19,28 @@ void ViewState::init() {
     _mouse_sensitivity = 0.002f;
     _mouse_down = false;
 
-    _bottom.set_position(glm::vec3(0, -1, 0));
-    _bottom.set_normal(glm::vec3(-1, 1, 0));
-    _bottom.set_dimensions(1, 3);
+    _bottom.set_position(glm::vec3(0, 0, 0));
+    _bottom.set_normal(glm::vec3(0, 1, 0));
+    _bottom.set_dimensions(3, 3);
+
+    _back.set_position(glm::vec3(0, 1.5, -1.5));
+    _back.set_normal(glm::vec3(0, 0, -1));
+    _back.set_dimensions(3, 3);
+
+    _right.set_position(glm::vec3(-1.5, 1.5, 0));
+    _right.set_normal(glm::vec3(1, 0, 0));
+    _right.set_dimensions(3, 3);
+
+    _left.set_position(glm::vec3(1.5, 1.5, 0));
+    _left.set_normal(glm::vec3(1, 0, 0));
+    _left.set_dimensions(3, 3);
+
+    // TODO: Need to add a clear front plane.
+
     _scene.add_thing(&_bottom);
+    _scene.add_thing(&_right);
+    _scene.add_thing(&_left);
+    _scene.add_thing(&_back);
     _scene.add_thing(&_particles);
 
     glm::vec3 pos = glm::vec3(0, 0, 5);
@@ -36,8 +54,12 @@ void ViewState::reset_scene() {
     _pause = true;
 
     _particles.clear();
-    glm::vec3 ori(0, 5, 0);
+    glm::vec3 ori(0, 1, 0);
     _particles.spawn_sphere(ori, 0.5);
+
+    // TODO: Build spatial map whenever scene is reset.
+    _particles.build_spatial_map();
+
 }
 
 void ViewState::handle_input() {
