@@ -1,4 +1,4 @@
-# Install script for directory: /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps
+# Install script for directory: /Users/anna/Desktop/final184/water-simulation/f2/deps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,8 +29,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/cmake_install.cmake")
-  include("/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/cmake_install.cmake")
+  include("/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/cmake_install.cmake")
+  include("/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/cmake_install.cmake")
 
 endif()
 

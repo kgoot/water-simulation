@@ -4,7 +4,7 @@
 deps/glfw/examples/CMakeFiles/boing.dir/__/deps/glad.c.o
  ../deps/glfw/deps/KHR/khrplatform.h
  ../deps/glfw/deps/glad/glad.h
- /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c
+ /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c
 deps/glfw/examples/CMakeFiles/boing.dir/boing.c.o
  ../deps/glfw/deps/KHR/khrplatform.h
  ../deps/glfw/deps/glad/glad.h
@@ -12,4 +12,4 @@ deps/glfw/examples/CMakeFiles/boing.dir/boing.c.o
  ../deps/glfw/deps/vulkan/vk_platform.h
  ../deps/glfw/deps/vulkan/vulkan.h
  ../deps/glfw/include/GLFW/glfw3.h
- /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/examples/boing.c
+ /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/examples/boing.c

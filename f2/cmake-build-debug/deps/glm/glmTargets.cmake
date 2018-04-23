@@ -49,7 +49,7 @@ unset(_expectedTargets)
 add_library(glm INTERFACE IMPORTED)
 
 set_target_properties(glm PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm"
+  INTERFACE_INCLUDE_DIRECTORIES "/Users/anna/Desktop/final184/water-simulation/f2/deps/glm"
 )
 
 # This file does not depend on other imported targets which have

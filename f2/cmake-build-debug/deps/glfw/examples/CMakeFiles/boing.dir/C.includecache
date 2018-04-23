@@ -112,7 +112,7 @@ GL/glext.h
 GL/glu.h
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c
+/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -122,7 +122,7 @@ string.h
 glad/glad.h
 -
 
-/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/examples/boing.c
+/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/examples/boing.c
 stdio.h
 -
 stdlib.h

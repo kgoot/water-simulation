@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2
+CMAKE_SOURCE_DIR = /Users/anna/Desktop/final184/water-simulation/f2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include deps/glfw/tests/CMakeFiles/tearing.dir/depend.make
@@ -59,16 +59,16 @@ include deps/glfw/tests/CMakeFiles/tearing.dir/flags.make
 
 deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o: deps/glfw/tests/CMakeFiles/tearing.dir/flags.make
 deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o: ../deps/glfw/tests/tearing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/tearing.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/tearing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/tearing.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/tearing.c
 
 deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tearing.dir/tearing.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/tearing.c > CMakeFiles/tearing.dir/tearing.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/tearing.c > CMakeFiles/tearing.dir/tearing.c.i
 
 deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tearing.dir/tearing.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/tearing.c -o CMakeFiles/tearing.dir/tearing.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/tearing.c -o CMakeFiles/tearing.dir/tearing.c.s
 
 deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o.requires:
 
@@ -83,16 +83,16 @@ deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o.provides.build: deps/glfw/tes
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.o: deps/glfw/tests/CMakeFiles/tearing.dir/flags.make
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.o: ../deps/glfw/deps/getopt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/__/deps/getopt.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/getopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/__/deps/getopt.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/getopt.c
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tearing.dir/__/deps/getopt.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/getopt.c > CMakeFiles/tearing.dir/__/deps/getopt.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/getopt.c > CMakeFiles/tearing.dir/__/deps/getopt.c.i
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tearing.dir/__/deps/getopt.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/getopt.c -o CMakeFiles/tearing.dir/__/deps/getopt.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/getopt.c -o CMakeFiles/tearing.dir/__/deps/getopt.c.s
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.o.requires:
 
@@ -107,16 +107,16 @@ deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.o.provides.build: deps/g
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad.c.o: deps/glfw/tests/CMakeFiles/tearing.dir/flags.make
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad.c.o: ../deps/glfw/deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/__/deps/glad.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/__/deps/glad.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tearing.dir/__/deps/glad.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/tearing.dir/__/deps/glad.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/tearing.dir/__/deps/glad.c.i
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tearing.dir/__/deps/glad.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/tearing.dir/__/deps/glad.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/tearing.dir/__/deps/glad.c.s
 
 deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad.c.o.requires:
 
@@ -144,8 +144,8 @@ deps/glfw/tests/tearing.app/Contents/MacOS/tearing: deps/glfw/tests/CMakeFiles/t
 deps/glfw/tests/tearing.app/Contents/MacOS/tearing: deps/glfw/tests/CMakeFiles/tearing.dir/build.make
 deps/glfw/tests/tearing.app/Contents/MacOS/tearing: deps/glfw/src/libglfw3.a
 deps/glfw/tests/tearing.app/Contents/MacOS/tearing: deps/glfw/tests/CMakeFiles/tearing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable tearing.app/Contents/MacOS/tearing"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tearing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable tearing.app/Contents/MacOS/tearing"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tearing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/glfw/tests/CMakeFiles/tearing.dir/build: deps/glfw/tests/tearing.app/Contents/MacOS/tearing
@@ -159,10 +159,10 @@ deps/glfw/tests/CMakeFiles/tearing.dir/requires: deps/glfw/tests/CMakeFiles/tear
 .PHONY : deps/glfw/tests/CMakeFiles/tearing.dir/requires
 
 deps/glfw/tests/CMakeFiles/tearing.dir/clean:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/tearing.dir/cmake_clean.cmake
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/tearing.dir/cmake_clean.cmake
 .PHONY : deps/glfw/tests/CMakeFiles/tearing.dir/clean
 
 deps/glfw/tests/CMakeFiles/tearing.dir/depend:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2 /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/tearing.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/anna/Desktop/final184/water-simulation/f2 /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/tearing.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw/tests/CMakeFiles/tearing.dir/depend
 

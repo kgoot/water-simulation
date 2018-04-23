@@ -6,5 +6,5 @@ C_FLAGS = -g -fPIC
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/include -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/src -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/src 
+C_INCLUDES = -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/include -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/src -I/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/src 
 

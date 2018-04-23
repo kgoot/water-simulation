@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2
+CMAKE_SOURCE_DIR = /Users/anna/Desktop/final184/water-simulation/f2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include deps/glfw/tests/CMakeFiles/sharing.dir/depend.make
@@ -59,16 +59,16 @@ include deps/glfw/tests/CMakeFiles/sharing.dir/flags.make
 
 deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.o: deps/glfw/tests/CMakeFiles/sharing.dir/flags.make
 deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.o: ../deps/glfw/tests/sharing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sharing.dir/sharing.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/sharing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sharing.dir/sharing.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/sharing.c
 
 deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sharing.dir/sharing.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/sharing.c > CMakeFiles/sharing.dir/sharing.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/sharing.c > CMakeFiles/sharing.dir/sharing.c.i
 
 deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sharing.dir/sharing.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/sharing.c -o CMakeFiles/sharing.dir/sharing.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/sharing.c -o CMakeFiles/sharing.dir/sharing.c.s
 
 deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.o.requires:
 
@@ -83,16 +83,16 @@ deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.o.provides.build: deps/glfw/tes
 
 deps/glfw/tests/CMakeFiles/sharing.dir/__/deps/glad.c.o: deps/glfw/tests/CMakeFiles/sharing.dir/flags.make
 deps/glfw/tests/CMakeFiles/sharing.dir/__/deps/glad.c.o: ../deps/glfw/deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/tests/CMakeFiles/sharing.dir/__/deps/glad.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sharing.dir/__/deps/glad.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/tests/CMakeFiles/sharing.dir/__/deps/glad.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sharing.dir/__/deps/glad.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c
 
 deps/glfw/tests/CMakeFiles/sharing.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sharing.dir/__/deps/glad.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/sharing.dir/__/deps/glad.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/sharing.dir/__/deps/glad.c.i
 
 deps/glfw/tests/CMakeFiles/sharing.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sharing.dir/__/deps/glad.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/sharing.dir/__/deps/glad.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/sharing.dir/__/deps/glad.c.s
 
 deps/glfw/tests/CMakeFiles/sharing.dir/__/deps/glad.c.o.requires:
 
@@ -118,8 +118,8 @@ deps/glfw/tests/sharing.app/Contents/MacOS/sharing: deps/glfw/tests/CMakeFiles/s
 deps/glfw/tests/sharing.app/Contents/MacOS/sharing: deps/glfw/tests/CMakeFiles/sharing.dir/build.make
 deps/glfw/tests/sharing.app/Contents/MacOS/sharing: deps/glfw/src/libglfw3.a
 deps/glfw/tests/sharing.app/Contents/MacOS/sharing: deps/glfw/tests/CMakeFiles/sharing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sharing.app/Contents/MacOS/sharing"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sharing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sharing.app/Contents/MacOS/sharing"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sharing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/glfw/tests/CMakeFiles/sharing.dir/build: deps/glfw/tests/sharing.app/Contents/MacOS/sharing
@@ -132,10 +132,10 @@ deps/glfw/tests/CMakeFiles/sharing.dir/requires: deps/glfw/tests/CMakeFiles/shar
 .PHONY : deps/glfw/tests/CMakeFiles/sharing.dir/requires
 
 deps/glfw/tests/CMakeFiles/sharing.dir/clean:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/sharing.dir/cmake_clean.cmake
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/sharing.dir/cmake_clean.cmake
 .PHONY : deps/glfw/tests/CMakeFiles/sharing.dir/clean
 
 deps/glfw/tests/CMakeFiles/sharing.dir/depend:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2 /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/sharing.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/anna/Desktop/final184/water-simulation/f2 /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/sharing.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw/tests/CMakeFiles/sharing.dir/depend
 

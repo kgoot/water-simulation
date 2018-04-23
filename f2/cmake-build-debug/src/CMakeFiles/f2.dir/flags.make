@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glad/include -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/include -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm 
+C_INCLUDES = -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glad/include -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/include -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glm 
 
 CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glad/include -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/include -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm 
+CXX_INCLUDES = -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glad/include -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/include -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glm 
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm
+# Install script for directory: /Users/anna/Desktop/final184/water-simulation/f2/deps/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,13 +28,13 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm/glm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/anna/Desktop/final184/water-simulation/f2/deps/glm/glm")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glm" TYPE FILE FILES
-    "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/lib/cmake/glm/glmConfig.cmake"
-    "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/glmConfigVersion.cmake"
+    "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/lib/cmake/glm/glmConfig.cmake"
+    "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/glmConfigVersion.cmake"
     )
 endif()
 
@@ -42,7 +42,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glm/glmTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glm/glmTargets.cmake"
-         "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
+         "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glm/glmTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -51,17 +51,17 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glm" TYPE FILE FILES "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glm" TYPE FILE FILES "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/glm.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/glm.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/glm/cmake_install.cmake")
-  include("/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glm/test/cmake_install.cmake")
+  include("/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/glm/cmake_install.cmake")
+  include("/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glm/test/cmake_install.cmake")
 
 endif()
 

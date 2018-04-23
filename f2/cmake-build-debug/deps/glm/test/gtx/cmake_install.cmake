@@ -1,4 +1,4 @@
-# Install script for directory: /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm/test/gtx
+# Install script for directory: /Users/anna/Desktop/final184/water-simulation/f2/deps/glm/test/gtx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

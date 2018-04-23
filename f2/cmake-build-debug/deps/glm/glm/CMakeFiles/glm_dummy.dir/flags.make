@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -pedantic -std=gnu++11
 
 CXX_DEFINES = -D_CRT_SECURE_NO_WARNINGS
 
-CXX_INCLUDES = -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm/test/external -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glm/glm/.. 
+CXX_INCLUDES = -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glm -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glm/test/external -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glm/glm/.. 
 

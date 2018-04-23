@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2
+CMAKE_SOURCE_DIR = /Users/anna/Desktop/final184/water-simulation/f2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulat
 include deps/glfw/CMakeFiles/uninstall.dir/progress.make
 
 deps/glfw/CMakeFiles/uninstall:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw && /Applications/CLion.app/Contents/bin/cmake/bin/cmake -P /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/cmake_uninstall.cmake
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw && /Applications/CLion.app/Contents/bin/cmake/bin/cmake -P /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/cmake_uninstall.cmake
 
 uninstall: deps/glfw/CMakeFiles/uninstall
 uninstall: deps/glfw/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ deps/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : deps/glfw/CMakeFiles/uninstall.dir/build
 
 deps/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : deps/glfw/CMakeFiles/uninstall.dir/clean
 
 deps/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2 /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/anna/Desktop/final184/water-simulation/f2 /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw/CMakeFiles/uninstall.dir/depend
 

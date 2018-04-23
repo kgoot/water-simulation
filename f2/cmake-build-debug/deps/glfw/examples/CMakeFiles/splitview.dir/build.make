@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2
+CMAKE_SOURCE_DIR = /Users/anna/Desktop/final184/water-simulation/f2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include deps/glfw/examples/CMakeFiles/splitview.dir/depend.make
@@ -59,20 +59,20 @@ include deps/glfw/examples/CMakeFiles/splitview.dir/flags.make
 
 deps/glfw/examples/splitview.app/Contents/Resources/glfw.icns: ../deps/glfw/examples/glfw.icns
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Copying OS X content deps/glfw/examples/splitview.app/Contents/Resources/glfw.icns"
-	$(CMAKE_COMMAND) -E copy /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/examples/glfw.icns deps/glfw/examples/splitview.app/Contents/Resources/glfw.icns
+	$(CMAKE_COMMAND) -E copy /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/examples/glfw.icns deps/glfw/examples/splitview.app/Contents/Resources/glfw.icns
 
 deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o: deps/glfw/examples/CMakeFiles/splitview.dir/flags.make
 deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o: ../deps/glfw/examples/splitview.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/splitview.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/examples/splitview.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/splitview.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/examples/splitview.c
 
 deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/splitview.dir/splitview.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/examples/splitview.c > CMakeFiles/splitview.dir/splitview.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/examples/splitview.c > CMakeFiles/splitview.dir/splitview.c.i
 
 deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/splitview.dir/splitview.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/examples/splitview.c -o CMakeFiles/splitview.dir/splitview.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/examples/splitview.c -o CMakeFiles/splitview.dir/splitview.c.s
 
 deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o.requires:
 
@@ -87,16 +87,16 @@ deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o.provides.build: deps/g
 
 deps/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad.c.o: deps/glfw/examples/CMakeFiles/splitview.dir/flags.make
 deps/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad.c.o: ../deps/glfw/deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/__/deps/glad.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/__/deps/glad.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c
 
 deps/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/splitview.dir/__/deps/glad.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/splitview.dir/__/deps/glad.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/splitview.dir/__/deps/glad.c.i
 
 deps/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/splitview.dir/__/deps/glad.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/splitview.dir/__/deps/glad.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/splitview.dir/__/deps/glad.c.s
 
 deps/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad.c.o.requires:
 
@@ -122,8 +122,8 @@ deps/glfw/examples/splitview.app/Contents/MacOS/splitview: deps/glfw/examples/CM
 deps/glfw/examples/splitview.app/Contents/MacOS/splitview: deps/glfw/examples/CMakeFiles/splitview.dir/build.make
 deps/glfw/examples/splitview.app/Contents/MacOS/splitview: deps/glfw/src/libglfw3.a
 deps/glfw/examples/splitview.app/Contents/MacOS/splitview: deps/glfw/examples/CMakeFiles/splitview.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable splitview.app/Contents/MacOS/splitview"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/splitview.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable splitview.app/Contents/MacOS/splitview"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/splitview.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/glfw/examples/CMakeFiles/splitview.dir/build: deps/glfw/examples/splitview.app/Contents/MacOS/splitview
@@ -137,10 +137,10 @@ deps/glfw/examples/CMakeFiles/splitview.dir/requires: deps/glfw/examples/CMakeFi
 .PHONY : deps/glfw/examples/CMakeFiles/splitview.dir/requires
 
 deps/glfw/examples/CMakeFiles/splitview.dir/clean:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/splitview.dir/cmake_clean.cmake
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/splitview.dir/cmake_clean.cmake
 .PHONY : deps/glfw/examples/CMakeFiles/splitview.dir/clean
 
 deps/glfw/examples/CMakeFiles/splitview.dir/depend:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2 /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/examples /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/examples/CMakeFiles/splitview.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/anna/Desktop/final184/water-simulation/f2 /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/examples /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/examples/CMakeFiles/splitview.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw/examples/CMakeFiles/splitview.dir/depend
 

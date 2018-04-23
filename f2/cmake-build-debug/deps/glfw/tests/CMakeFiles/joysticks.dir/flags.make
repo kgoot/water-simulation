@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps -I/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/include 
+C_INCLUDES = -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps -I/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/include 
 

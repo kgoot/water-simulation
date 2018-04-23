@@ -14,17 +14,17 @@
 
 namespace pbf {
 
-class Particles : public Thing {
-public:
+  class Particles : public Thing {
+  public:
     Particles();
 
     void spawn() {
-        _particles.emplace_back();
+      _particles.emplace_back();
     }
 
     void spawn_disk();
 
-    void spawn_sphere(glm::vec3 &origin, float r, float density=10.f);
+    void spawn_sphere(glm::vec3 &origin, float r, float density=3.f);
 
     void spawn_rect();
 
@@ -42,15 +42,22 @@ public:
 
     void build_spatial_map();
 
-    std::vector<Particle> find_neighbors(Particle p);
+    std::vector<Particle *> find_neighbors(Particle p);
 
-    double wPoly6(Particle p, Particle neighbor, double h);
+    double wPoly6(Particle p, Particle neighbor);
 
-    glm::vec3 wGradientSpiky(Particle p, Particle neighbor, double h);
+    glm::vec3 wGradientSpiky(Particle p, Particle neighbor);
 
-    double Particles::rho(Particle p, std::vector<Particle *> * neighbors);
+    double getRho(Particle p, std::vector<Particle *> * neighbors);
 
-private:
+    double C(double rho, double p0);
+
+    glm::vec3 cGradient(Particle p, Particle neighbor, double rho0);
+
+    double lambda(double rho, double rho0, Particle p, std::vector<Particle *> * neighbors, double epsilon);
+
+
+  private:
     Buffer _vbo;
     VertexArray _vao;
     std::vector<Particle> _particles;
@@ -58,7 +65,7 @@ private:
     Program _program;
 
     bool _is_collidable = false;
-};
+  };
 
 }
 

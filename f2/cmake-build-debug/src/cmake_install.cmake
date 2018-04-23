@@ -1,4 +1,4 @@
-# Install script for directory: /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/src
+# Install script for directory: /Users/anna/Desktop/final184/water-simulation/f2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,18 +29,18 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/f2")
+   "/Users/anna/Desktop/final184/water-simulation/f2/f2")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2" TYPE EXECUTABLE FILES "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/f2")
-  if(EXISTS "$ENV{DESTDIR}/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/f2" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/f2")
+file(INSTALL DESTINATION "/Users/anna/Desktop/final184/water-simulation/f2" TYPE EXECUTABLE FILES "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/f2")
+  if(EXISTS "$ENV{DESTDIR}/Users/anna/Desktop/final184/water-simulation/f2/f2" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/anna/Desktop/final184/water-simulation/f2/f2")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" "$ENV{DESTDIR}/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/f2")
+      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" "$ENV{DESTDIR}/Users/anna/Desktop/final184/water-simulation/f2/f2")
     endif()
   endif()
 endif()

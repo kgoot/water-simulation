@@ -1,6 +1,6 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2
--- The C compiler identification is AppleClang 9.0.0.9000039
--- The CXX compiler identification is AppleClang 9.0.0.9000039
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/anna/Desktop/final184/water-simulation/f2
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
 -- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
 -- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -24,4 +24,4 @@
 -- GLM is a header only library, no need to build it. Set the option GLM_TEST_ENABLE with ON to build and run the test bench
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug
+-- Build files have been written to: /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug

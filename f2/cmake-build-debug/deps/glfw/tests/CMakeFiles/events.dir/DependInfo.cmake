@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/getopt.c" "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c" "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/events.dir/__/deps/glad.c.o"
-  "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/events.c" "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/events.dir/events.c.o"
+  "/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/getopt.c" "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.o"
+  "/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c" "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/events.dir/__/deps/glad.c.o"
+  "/Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/events.c" "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/events.dir/events.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -18,7 +18,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

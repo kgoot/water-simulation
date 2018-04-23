@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/install_manifest.txt" files)
+file(READ "/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

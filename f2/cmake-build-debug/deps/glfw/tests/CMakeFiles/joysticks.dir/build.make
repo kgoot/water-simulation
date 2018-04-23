@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2
+CMAKE_SOURCE_DIR = /Users/anna/Desktop/final184/water-simulation/f2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include deps/glfw/tests/CMakeFiles/joysticks.dir/depend.make
@@ -59,16 +59,16 @@ include deps/glfw/tests/CMakeFiles/joysticks.dir/flags.make
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o: deps/glfw/tests/CMakeFiles/joysticks.dir/flags.make
 deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o: ../deps/glfw/tests/joysticks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/joysticks.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/joysticks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/joysticks.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/joysticks.c
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/joysticks.dir/joysticks.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/joysticks.c > CMakeFiles/joysticks.dir/joysticks.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/joysticks.c > CMakeFiles/joysticks.dir/joysticks.c.i
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/joysticks.dir/joysticks.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests/joysticks.c -o CMakeFiles/joysticks.dir/joysticks.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests/joysticks.c -o CMakeFiles/joysticks.dir/joysticks.c.s
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o.requires:
 
@@ -83,16 +83,16 @@ deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o.provides.build: deps/glfw
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o: deps/glfw/tests/CMakeFiles/joysticks.dir/flags.make
 deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o: ../deps/glfw/deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/__/deps/glad.c.o   -c /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/joysticks.dir/__/deps/glad.c.o   -c /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/joysticks.dir/__/deps/glad.c.i"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/joysticks.dir/__/deps/glad.c.i
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c > CMakeFiles/joysticks.dir/__/deps/glad.c.i
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/joysticks.dir/__/deps/glad.c.s"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/joysticks.dir/__/deps/glad.c.s
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/deps/glad.c -o CMakeFiles/joysticks.dir/__/deps/glad.c.s
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o.requires:
 
@@ -118,8 +118,8 @@ deps/glfw/tests/joysticks: deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad
 deps/glfw/tests/joysticks: deps/glfw/tests/CMakeFiles/joysticks.dir/build.make
 deps/glfw/tests/joysticks: deps/glfw/src/libglfw3.a
 deps/glfw/tests/joysticks: deps/glfw/tests/CMakeFiles/joysticks.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable joysticks"
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joysticks.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable joysticks"
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joysticks.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/glfw/tests/CMakeFiles/joysticks.dir/build: deps/glfw/tests/joysticks
@@ -132,10 +132,10 @@ deps/glfw/tests/CMakeFiles/joysticks.dir/requires: deps/glfw/tests/CMakeFiles/jo
 .PHONY : deps/glfw/tests/CMakeFiles/joysticks.dir/requires
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/clean:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/joysticks.dir/cmake_clean.cmake
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/joysticks.dir/cmake_clean.cmake
 .PHONY : deps/glfw/tests/CMakeFiles/joysticks.dir/clean
 
 deps/glfw/tests/CMakeFiles/joysticks.dir/depend:
-	cd /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2 /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/deps/glfw/tests /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests /Users/youngwookkang/Documents/Berkeley/now/184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/joysticks.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/anna/Desktop/final184/water-simulation/f2 /Users/anna/Desktop/final184/water-simulation/f2/deps/glfw/tests /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests /Users/anna/Desktop/final184/water-simulation/f2/cmake-build-debug/deps/glfw/tests/CMakeFiles/joysticks.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw/tests/CMakeFiles/joysticks.dir/depend
 
