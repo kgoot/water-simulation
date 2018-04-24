@@ -112,7 +112,7 @@ namespace pbf {
         delta_p += (float) (lambda_i + lambda_j) * wGradientSpiky(p, *neighbor);
       }
       delta_p /= rho0;
-      p.pred_pos += delta_p * timestep;
+      if (delta_p != glm::vec3()) p.pred_pos += delta_p * timestep;
     }
 
 
@@ -190,7 +190,7 @@ namespace pbf {
   glm::vec3 Particles::wGradientSpiky(Particle p, Particle neighbor) {
     double h = p.radius + neighbor.radius;
     glm::vec3 r = p.pos - neighbor.pos;
-    return (float) (45 / (M_PI * pow(h, 6.0)) * pow(h - glm::length(r), 2.0)) * glm::normalize(r); // do I normalize r or the whole thing?
+    return (float) (45 / (M_PI * pow(h, 6.0)) * pow(h - glm::length(r), 2.0)) * r; // do I normalize r or the whole thing?
   }
 
 
@@ -211,11 +211,6 @@ namespace pbf {
 
 
   glm::vec3 Particles::cGradient(Particle p, Particle neighbor, double rho0) {
-//        glm::vec3 total = glm::vec3();
-//        for (Particle* neighbor : *neighbors) {
-//            total += wGradientSpiky(p, neighbor);
-//        }
-//        return total / (float) rho0; // do we need to normalize anything here?
     // TODO: include case where k = i (?)
     return -wGradientSpiky(p, neighbor);
   }
@@ -224,10 +219,11 @@ namespace pbf {
   double Particles::lambda(double rho, double rho0, Particle p, std::vector<Particle *> * neighbors, double epsilon) {
     double total = 0.0;
     for (Particle* neighbor : *neighbors) {
-      total += pow(glm::length(cGradient(p, *neighbor, rho0)), 2.0);
+        glm::vec3 grad = cGradient(p, *neighbor, rho0);
+        total += pow(glm::length(cGradient(p, *neighbor, rho0)), 2.0);
     }
 
-    return -C(rho, rho0) / total + epsilon;
+    return -C(rho, rho0) / (total + epsilon);
   }
 
 
