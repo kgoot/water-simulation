@@ -16,9 +16,9 @@ struct Particle {
     glm::vec3 pred_pos;
     glm::vec3 vel;
 
-    float mass;
+    float mass = 1;
 
-    double radius;
+    double radius = 0.5;
 
     Particle() :
         pos(0.f), vel(0.f)
