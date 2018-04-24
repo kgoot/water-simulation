@@ -44,20 +44,36 @@
   		<h2>Final Project Milestone: 3D Fluid Interactions with Different Viscosities</h2>
   		<br>
   		<h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
-  		<h4>SIDs: 25289428, 25358477, 25033827</h4>
-
+  		<h4>SIDs: 25289428, 25033827, 25358477</h4>
   		<a href="#proposal" class="button fit smooth-scroll-middle">Click here for project proposal</a>
   	</center>
 
+  	<h2>Abstract</h2>
+  	<p>In this project, we will build a 3D position based particle simulator. This project is done based off the work on <a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position Based Fluids [Macklin, Muller]</a>. In the current stage of the project, particle-plane collisions and gravitational forces act on the particles allowing them to fall within a confined plane. Up next we will implement rendering of fluid properties including incompressibility (which we are currently debugging), vorticity and viscosity.</p>
   	 
 
+    <h2>Summary of Our Current Progress</h2>
+    <p>We began by trying to learn a lot about OpenGl and WebGL. We initially attempted to implement everything using JavaScript, THREE.js and WebGL. We made quite a bit of progress and were able to set up a world, add sphere objects to to our scene, implement falling spheres due to gravity, and account for plane-sphere intersections. Despite all of that, after a conversation with the course staff (Thank you Dillon), we decided to shift gears from that approach and move back to C++ and OpenGL. There are a couple of advantages to shifting our approach:
+    	<ul>
+    		<li>Javescript is single threated meaning any speedups would be more difficult to implement</li>
+    		<li>There are multiple conflicting and unsupported versions of THREE.js with insufficient frameworks for our purposes</li>
+    		<li>Javascript makes us all cry</li>
+    	</ul>
+    </p>
 
-    <h2>Summary</h2>
-    <p>(Karina) Talk about our initial attempts with WebGL <br><br>
+    <p> Shifting gears to OpenGL, we decided to setup our project structure taking inspiration from Dillon Yao's <a href="https://github.com/yaoius/f2">framework</a>  posted on Piazza. This proved to be a really good starting point since we could save time from setting up the GUI and jump into OpenGL and particle intersection implementation. We followed these steps:
 
-        After constructing some frameworks with WebGL, we decided to switch lanes into by using OpenGL based off of Dillon’s framework, posted on Piazza. We started off by first setting up the most basic set up that we wanted, which is a 5 walled container with a whole mass of particles dropping into the container. In terms of external accelerations, gravity has already been implemented, while basic plane collision has also been implemented. We then implemented finding neighbors and building a spatial map, so that we can we use these functions for updating positions and potentially even collision detection. We have almost finished implementing incompressibility and self collision, using OpenGL. There was initially some confusion with the incompressibility equation, but all the variables and functions have been hashed out. <br><br>
+    	<ul>
+    		<li>Set up the scene with planes acting as walls to surround the liquid</li>
+    		<li>Set up a cube of 1000 particles that fall according to the forces of gravity </li>
+    		<li>Implement a spacial map for neighbors</li>
+    		<li>Implement equations to account for incompressibility</li>
+    	</ul>
 
-        We initially wanted to have a inefficient version of a 3D fluid simulator working first, but we are now trying to implement as much OpenGL as possible while working on our first iteration of the code, and then later include further optimization that may be necessary that we may have left out. Since we have started plane collision and the fluid position update function, we will shortly after be able to get a draft of the code that will have to debug. Most of the rest of the project will be spent debugging and including additional features, such as sphere collision or different levels of viscosities.</p>
+	We currently have some bugs in our incompressibility code that we are going to dive into after the midterm (TT__TT), so we can only really visualize the forces of gravity acting on the spheres. Here is a quick visualization.</p>
+
+	<h2>Milestone Video</h2>
+	<p>We made a video overview summarizing our current progress, which can be accesses here. [TODO] </p>
 
     <h2>Milestone Slides</h2>
     <p>TODO ANNA</p>
