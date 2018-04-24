@@ -37,15 +37,49 @@
 
 
 <!-- Section 1 -->
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="raygen">
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="milestone">
   <div class="content">
   	<center>
+  		<h1>CS 184: Computer Graphics and Imaging</h1>
+  		<h2>Final Project Milestone: 3D Fluid Interactions with Different Viscosities</h2>
+  		<br>
+  		<h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
+  		<h4>SIDs: 25289428, 25358477, 25033827</h4>
+
+  		<a href="#proposal" class="button fit smooth-scroll-middle">Click here for project proposal</a>
+  	</center>
+
+  	 
+
+
+    <h2>Summary</h2>
+    <p>(Karina) Talk about our initial attempts with WebGL <br><br>
+
+        After constructing some frameworks with WebGL, we decided to switch lanes into by using OpenGL based off of Dillon’s framework, posted on Piazza. We started off by first setting up the most basic set up that we wanted, which is a 5 walled container with a whole mass of particles dropping into the container. In terms of external accelerations, gravity has already been implemented, while basic plane collision has also been implemented. We then implemented finding neighbors and building a spatial map, so that we can we use these functions for updating positions and potentially even collision detection. We have almost finished implementing incompressibility and self collision, using OpenGL. There was initially some confusion with the incompressibility equation, but all the variables and functions have been hashed out. <br><br>
+
+        We initially wanted to have a inefficient version of a 3D fluid simulator working first, but we are now trying to implement as much OpenGL as possible while working on our first iteration of the code, and then later include further optimization that may be necessary that we may have left out. Since we have started plane collision and the fluid position update function, we will shortly after be able to get a draft of the code that will have to debug. Most of the rest of the project will be spent debugging and including additional features, such as sphere collision or different levels of viscosities.</p>
+
+    <h2>Milestone Slides</h2>
+    <p>TODO ANNA</p>
+
+
+    <h2>Timeline Update</h2>
+    <p>We believe we are on track to accomplish our goals for this project. Taking time to get antiquated with openGL and feel comfortable the the language in the paper took us longer than we anticipated. However, despite the fact that we've encountered difficulties and bugs, we were able to create an initial structure and think we will be able to accomplish all our goals by the final deadline</p>
+
+  </div>
+</section>
+
+
+<!-- Section 1 -->
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="proposal">
+  <div class="content">
+  <!-- 	<center>
   		<h1>CS 184: Computer Graphics and Imaging</h1>
   		<h2>Final Project Proposal: 3D Fluid Interactions with Different Viscosities</h2>
   		<br>
   		<h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
   		<h4>SIDs: 25289428, 25358477, 25033827</h4>
-  	</center>
+  	</center> -->
     <h2>Overview</h2>
 
     <p>Our project is a 3D fluid simulator in a confined space. It will simulate the interaction between fluids of different viscosities and physical properties. </p>
@@ -105,6 +139,9 @@
 		During this week, we will implement particle to particle collisions between different particles in order to simulate interactions of objects with different viscosities. <br>
 		We will also implement mouse interactivity with our simulator to include stirring, pouring and dropping particles into the scene (one of our stretch goals).
 	</p>
+
+
+
 
 	<h2>Resources</h2>
 	<p>From our initial research, these resources seem like great starting points for our final project:</p>
