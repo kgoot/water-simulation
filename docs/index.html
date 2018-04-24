@@ -55,7 +55,7 @@
     <h2>Summary of Our Current Progress</h2>
     <p>We began by trying to learn a lot about OpenGl and WebGL. We initially attempted to implement everything using JavaScript, THREE.js and WebGL. We made quite a bit of progress and were able to set up a world, add sphere objects to to our scene, implement falling spheres due to gravity, and account for plane-sphere intersections. Despite all of that, after a conversation with the course staff (Thank you Dillon), we decided to shift gears from that approach and move back to C++ and OpenGL. There are a couple of advantages to shifting our approach:
     	<ul>
-    		<li>Javescript is single threated meaning any speedups would be more difficult to implement</li>
+    		<li>Javescript is single threaded meaning any speedups would be more difficult to implement</li>
     		<li>There are multiple conflicting and unsupported versions of THREE.js with insufficient frameworks for our purposes</li>
     		<li>Javascript makes us all cry</li>
     	</ul>
@@ -70,17 +70,25 @@
     		<li>Implement equations to account for incompressibility</li>
     	</ul>
 
-	We currently have some bugs in our incompressibility code that we are going to dive into after the midterm (TT__TT), so we can only really visualize the forces of gravity acting on the spheres. Here is a quick visualization.</p>
+	We currently have some bugs in our incompressibility code that we are going to dive into after the midterm (TT__TT), so we can only really visualize the forces of gravity acting on the spheres. Here is a quick visualization:</p>
+
+	 <center>
+      <video id="myVideo" style='height: 70%; width: 70%' alt="" autoplay controls loop >
+        <source src="images/incompressibility.mov" type="video/mp4">
+      </video>
+      <figcaption style='font-size: 12px'> Figure 3: Cloth draping simulation with 2 corners pinned </figcaption>
+      <br>
+    </center>
 
 	<h2>Milestone Video</h2>
-	<p>We made a video overview summarizing our current progress, which can be accesses here. [TODO] </p>
+	<p>We made a video overview summarizing our current progress, which can be accesses <a href="https://www.youtube.com/watch?v=3UbTe4Nu8iY">here</a>.</p>
 
     <h2>Milestone Slides</h2>
-    <a href="https://kgoot.github.io/water-simulation/fluids.pdf" target="_blank" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> View Slides</a>
+    You can refer to the summary slides of our project. <a href="https://kgoot.github.io/water-simulation/fluids.pdf" target="_blank" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> View Slides</a>
 
 
     <h2>Timeline Update</h2>
-    <p>We believe we are on track to accomplish our goals for this project. Taking time to get antiquated with openGL and feel comfortable the the language in the paper took us longer than we anticipated. However, despite the fact that we've encountered difficulties and bugs, we were able to create an initial structure and think we will be able to accomplish all our goals by the final deadline</p>
+    <p>We believe we are on track to accomplish our goals for this project. Taking time to get antiquated with openGL and feel comfortable the the language in the paper took us longer than we anticipated. However, despite the fact that we've encountered difficulties and bugs, we were able to create an initial structure and think we will be able to accomplish all our goals by the final deadline.</p>
 
   </div>
 </section>
@@ -96,6 +104,7 @@
   		<h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
   		<h4>SIDs: 25289428, 25358477, 25033827</h4>
   	</center> -->
+    <h1>Final Project Proposal</h1>
     <h2>Overview</h2>
 
     <p>Our project is a 3D fluid simulator in a confined space. It will simulate the interaction between fluids of different viscosities and physical properties. </p>
