@@ -8,17 +8,22 @@
 #define PARTICLE_RADIUS 0.05f
 
 #include <glm/vec3.hpp>
+#include <vector>
+//using namespace std;
 
 namespace pbf {
 
-struct Particle {
+  struct Particle {
     glm::vec3 pos;
     glm::vec3 pred_pos;
     glm::vec3 vel;
 
     float mass = 1;
-
     double radius = 0.5;
+    double rho = 0.0;
+    double lambda = 0.0;
+    std::vector<Particle *> neighbors;
+
 
     Particle() :
         pos(0.f), vel(0.f)
@@ -27,7 +32,7 @@ struct Particle {
     Particle(glm::vec3 &_pos) :
         pos(_pos), vel(0.f)
     { }
-};
+  };
 
 }
 

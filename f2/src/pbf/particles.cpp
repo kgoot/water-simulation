@@ -17,6 +17,7 @@
 #include "../scene/scene.h"
 
 #include <math.h>
+
 using namespace std;
 
 namespace pbf {
@@ -95,26 +96,33 @@ namespace pbf {
       p.vel += glm::vec3(0, -9.8f, 0) * timestep;
       p.pred_pos = p.pos + p.vel * timestep;
     }
-//    std::cout << ";lakjdsf";
 
     // TODO: Calculate lambdas
+    build_spatial_map();
+
     double rho0 = 6300.0;
-    double epsilon = 0.01;
+    double epsilon = 600.;
+    double k = 0.001;
+    double n = 4;
+    double delta_q = 0.001 * _h;
     for (Particle &p : _particles) {
-      std::vector<Particle *> neighbors_i = find_neighbors(p);
-      double rho_i = getRho(p, &neighbors_i);
-      double lambda_i = lambda(rho_i, rho0, p, &neighbors_i, epsilon);
-      glm::vec3 delta_p = glm::vec3();
-      for (Particle* neighbor : neighbors_i) {
-        std::vector<Particle *> neighbors_j = find_neighbors(*neighbor);
-        double rho_j = getRho(p, &neighbors_j);
-        double lambda_j = lambda(rho_j, rho0, *neighbor, &neighbors_j, epsilon);
-        delta_p += (float) (lambda_i + lambda_j) * wGradientSpiky(p, *neighbor);
-      }
-      delta_p /= rho0;
-      if (delta_p != glm::vec3()) p.pred_pos += delta_p * timestep;
+      find_neighbors(p);
+      p.rho = get_rho(p);
+      p.lambda = lambda(p.rho, rho0, p, epsilon);
     }
 
+    for (Particle &p : _particles) {
+      double lambda_i = p.lambda;
+
+      glm::vec3 delta_p(0.f);
+      for (Particle *neighbor : p.neighbors) {
+        double lambda_j = neighbor->lambda;
+        double s_corr_j = s_corr(p, *neighbor, k, delta_q, n);
+        delta_p += (float) (lambda_i + lambda_j + s_corr_j) * w_gradient_spiky(p, *neighbor); // + s_corr_j
+      }
+      delta_p /= rho0;
+      p.pred_pos += delta_p;
+    }
 
 
     for (Thing *t : _scene->get_collidables()) {
@@ -122,7 +130,9 @@ namespace pbf {
         t->collide(p);
     }
 
+
     for (Particle &p : _particles) {
+      p.vel = (p.pred_pos - p.pos) / timestep;
       p.pos = p.pred_pos;
     }
   }
@@ -132,10 +142,10 @@ namespace pbf {
   }
 
 
-  int Particles::hash_position(Particle p) { //float
-    int x = (int) floor(p.pos.x / (2 * p.radius));
-    int y = (int) floor(p.pos.y / (2 * p.radius));
-    int z = (int) floor(p.pos.z / (2 * p.radius));
+  int Particles::hash_position(Particle &p) { //float
+    int x = (int) floor(p.pos.x / _h);
+    int y = (int) floor(p.pos.y / _h);
+    int z = (int) floor(p.pos.z / _h);
 
     return (x * 31 + y) * 31 + z; // (float)
   }
@@ -143,17 +153,16 @@ namespace pbf {
 
   void Particles::build_spatial_map() {
     for (const auto &entry : _spatial_map) {
-      delete(entry.second);
+      delete (entry.second);
     }
     _spatial_map.clear();
 
     for (Particle &p : _particles) {
       int hash_pos = hash_position(p);
       if (_spatial_map.find(hash_pos) == _spatial_map.end()) {
-        vector<Particle *> * box_p = new vector<Particle*>();
+        vector<Particle *> *box_p = new vector<Particle *>();
         box_p->push_back(&p);
         _spatial_map[hash_pos] = box_p;
-
       } else {
         _spatial_map.find(hash_pos)->second->push_back(&p);
       }
@@ -161,44 +170,51 @@ namespace pbf {
   }
 
 
-  vector<Particle *> Particles::find_neighbors(Particle p) {
-    vector<Particle* >* neighbors = new vector<Particle *>();
+  void Particles::find_neighbors(Particle &p) {
+    p.neighbors.clear();
     for (int i = -1; i <= 1; i++) {
       for (int j = -1; j <= 1; j++) {
         for (int k = -1; k <= 1; k++) {
           int hash_pos = hash_position(p);
           if (_spatial_map.find(hash_pos) != _spatial_map.end()) {
-            for (Particle* neighbor : *_spatial_map[hash_pos]) {
-              neighbors->push_back(neighbor);
+            for (Particle *neighbor : *_spatial_map[hash_pos]) {
+              if (&p != neighbor) {
+                p.neighbors.push_back(neighbor);
+              }
             }
           }
         }
       }
     }
-    return *neighbors;
   }
 
 
-  double Particles::wPoly6(Particle p, Particle neighbor) {
-    double h = p.radius + neighbor.radius;
+  double Particles::w_poly_6(double r) {
+//        double h = p.radius + neighbor.radius;
 //        double r = glm::length(p.pos - neighbor.pos); // [0] ?
-    double r = glm::distance(p.pos, neighbor.pos);
-    return 315 / (64 * M_PI * pow(h, 9.0)) * pow(pow(h, 2.0) - pow(r, 2.0), 3.0);
+    if (r > _h) {
+      return 0.0;
+    }
+    return 315 / (64 * M_PI * pow(_h, 9.0)) * pow(pow(_h, 2.0) - pow(r, 2.0), 3.0);
   }
 
 
-  glm::vec3 Particles::wGradientSpiky(Particle p, Particle neighbor) {
-    double h = p.radius + neighbor.radius;
+  glm::vec3 Particles::w_gradient_spiky(Particle &p, Particle &neighbor) {
+//        double h = p.radius + neighbor.radius;
     glm::vec3 r = p.pos - neighbor.pos;
-    return (float) (45 / (M_PI * pow(h, 6.0)) * pow(h - glm::length(r), 2.0)) * r; // do I normalize r or the whole thing?
+    if (glm::length(r) > _h || glm::length(r) == 0.f) {
+      return glm::vec3(0.f);
+    }
+    return (float) (45 / (M_PI * pow(_h, 6.0)) * pow(_h - glm::length(r), 2.0)) * glm::normalize(r); // do I normalize r or the whole thing?
   }
 
 
-  double Particles::getRho(Particle p, std::vector<Particle *> * neighbors) {
+  double Particles::get_rho(Particle &p) {
     double total = 0.0;
 
-    for (Particle* neighbor : *neighbors) {
-      total += wPoly6(p, *neighbor);
+    for (Particle *neighbor : p.neighbors) {
+      double r = glm::distance(p.pos, neighbor->pos);
+      total += w_poly_6(r);
     }
 
     return total;
@@ -210,20 +226,26 @@ namespace pbf {
   }
 
 
-  glm::vec3 Particles::cGradient(Particle p, Particle neighbor, double rho0) {
-    // TODO: include case where k = i (?)
-    return -wGradientSpiky(p, neighbor);
+  double Particles::lambda(double rho, double rho0, Particle &p, double epsilon) {
+    double total = 0.0;
+    glm::vec3 self_constraint(0.f);
+    for (Particle *neighbor : p.neighbors) {
+      glm::vec3 grad = w_gradient_spiky(p, *neighbor);
+//            total += pow(glm::length(c_gradient(p, *neighbor, rho0)), 2.0);
+      total += glm::dot(grad, grad);
+      self_constraint += grad;
+    }
+
+    return -C(rho, rho0) / ((total + glm::dot(self_constraint, self_constraint)) / rho0 + epsilon);
   }
 
 
-  double Particles::lambda(double rho, double rho0, Particle p, std::vector<Particle *> * neighbors, double epsilon) {
-    double total = 0.0;
-    for (Particle* neighbor : *neighbors) {
-        glm::vec3 grad = cGradient(p, *neighbor, rho0);
-        total += pow(glm::length(cGradient(p, *neighbor, rho0)), 2.0);
+  double Particles::s_corr(Particle &p, Particle &neighbor, double k, double delta_q, double n) {
+    double r = distance(p.pos, neighbor.pos);
+    if (w_poly_6(delta_q) == 0.0) {
+      return 0.0;
     }
-
-    return -C(rho, rho0) / (total + epsilon);
+    return -k * pow(w_poly_6(r) / w_poly_6(delta_q), n);
   }
 
 
