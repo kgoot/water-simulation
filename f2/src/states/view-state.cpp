@@ -14,7 +14,7 @@ void ViewState::init() {
   glEnable(GL_PROGRAM_POINT_SIZE);
   glClearColor(0.1f, 0.18f, 0.2f, 1.0f);
 
-  glCullFace(GL_BACK);
+  glCullFace(GL_FRONT);
   glEnable(GL_CULL_FACE);
 
   _terminate = false;
@@ -24,27 +24,27 @@ void ViewState::init() {
 
   _bottom.set_position(glm::vec3(0, 0, 0));
   _bottom.set_normal(glm::vec3(0, 1, 0));
-  _bottom.set_dimensions(2, 2);
+  _bottom.set_dimensions(1, 1);
 
-  _top.set_position(glm::vec3(0, 2, 0));
+  _top.set_position(glm::vec3(0, 3, 0));
   _top.set_normal(glm::vec3(0, -1, 0));
-  _top.set_dimensions(2, 2);
+  _top.set_dimensions(1, 1);
 
-  _back.set_position(glm::vec3(0, 1, -1));
-  _back.set_normal(glm::vec3(0, 0, -1));
-  _back.set_dimensions(2, 2);
+  _back.set_position(glm::vec3(0, 1.5, -0.5));
+  _back.set_normal(glm::vec3(0, 0, 1));
+  _back.set_dimensions(1, 3);
 
-  _front.set_position(glm::vec3(0, 1, 1));
-  _front.set_normal(glm::vec3(0, 0, 1));
-  _front.set_dimensions(2, 2);
+  _front.set_position(glm::vec3(0, 1.5, 0.5));
+  _front.set_normal(glm::vec3(0, 0, -1));
+  _front.set_dimensions(1, 3);
 
-  _right.set_position(glm::vec3(-1, 1, 0));
-  _right.set_normal(glm::vec3(1, 0, 0));
-  _right.set_dimensions(2, 2);
-
-  _left.set_position(glm::vec3(1, 1, 0));
+  _left.set_position(glm::vec3(-0.5, 1.5, 0));
   _left.set_normal(glm::vec3(1, 0, 0));
-  _left.set_dimensions(2, 2);
+  _left.set_dimensions(1, 3);
+
+  _right.set_position(glm::vec3(0.5, 1.5, 0));
+  _right.set_normal(glm::vec3(-1, 0, 0));
+  _right.set_dimensions(1, 3);
 
 
   _scene.add_thing(&_bottom);
@@ -66,7 +66,7 @@ void ViewState::reset_scene() {
   _pause = true;
 
   _particles.clear();
-  glm::vec3 ori(0, 1, 0);
+  glm::vec3 ori(0, 2, 0);
   _particles.spawn_sphere(ori, 0.5);
 
 }

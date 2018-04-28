@@ -73,13 +73,13 @@ void Plane::collide(pbf::Particle &p) {
         return;
 
     glm::vec3 tangent = p.pred_pos - (pred_proj_mag - EPS_F) * _n;
-    glm::vec3 from_center = tangent - _pos;
-    float w_dist = glm::dot(from_center, _right);
-    if (w_dist > _width / 2.f)
-        return;
-    float h_dist = glm::dot(from_center, _front);
-    if (h_dist > _height / 2.f)
-        return;
+//    glm::vec3 from_center = tangent - _pos;
+//    float w_dist = glm::dot(from_center, _right);
+//    if (w_dist > _width / 2.f)
+//        return;
+//    float h_dist = glm::dot(from_center, _front);
+//    if (h_dist > _height / 2.f)
+//        return;
 
     glm::vec3 correction = (tangent - p.pos) * (1 - FRICTION);
     p.pred_pos = correction + p.pos;
