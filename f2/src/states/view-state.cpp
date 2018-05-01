@@ -26,25 +26,25 @@ void ViewState::init() {
   _bottom.set_normal(glm::vec3(0, 1, 0));
   _bottom.set_dimensions(1, 1);
 
-  _top.set_position(glm::vec3(0, 3, 0));
+  _top.set_position(glm::vec3(0, 1.6, 0));
   _top.set_normal(glm::vec3(0, -1, 0));
   _top.set_dimensions(1, 1);
 
-  _back.set_position(glm::vec3(0, 1.5, -0.5));
+  _back.set_position(glm::vec3(0, 0.8, -0.5));
   _back.set_normal(glm::vec3(0, 0, 1));
-  _back.set_dimensions(1, 3);
+  _back.set_dimensions(1, 1.6);
 
-  _front.set_position(glm::vec3(0, 1.5, 0.5));
+  _front.set_position(glm::vec3(0, 0.8, 0.5));
   _front.set_normal(glm::vec3(0, 0, -1));
-  _front.set_dimensions(1, 3);
+  _front.set_dimensions(1, 1.6);
 
-  _left.set_position(glm::vec3(-0.5, 1.5, 0));
+  _left.set_position(glm::vec3(-0.5, 0.8, 0));
   _left.set_normal(glm::vec3(1, 0, 0));
-  _left.set_dimensions(1, 3);
+  _left.set_dimensions(1, 1.6);
 
-  _right.set_position(glm::vec3(0.5, 1.5, 0));
+  _right.set_position(glm::vec3(0.5, 0.8, 0));
   _right.set_normal(glm::vec3(-1, 0, 0));
-  _right.set_dimensions(1, 3);
+  _right.set_dimensions(1, 1.6);
 
 
   _scene.add_thing(&_bottom);

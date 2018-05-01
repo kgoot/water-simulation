@@ -1,13 +1,20 @@
 #version 330 core
 
 in vec3 fPos;
+in vec4 particleColor;
 
-out vec4 FragColor;
+out vec4 color;
 
 uniform float radius;
 uniform vec3 eye;
 uniform mat4 view;
 uniform mat4 proj;
+uniform vec3 lightDir;
+
+float Ns = 250;
+vec4 mat_specular=vec4(1);
+vec4 light_specular=vec4(1);
+
 
 void main() {
     vec3 n;
@@ -24,8 +31,12 @@ void main() {
     float depth = (1.f + clip_pos.z / clip_pos.w) / 2.f;
     gl_FragDepth = gl_DepthRange.near + gl_DepthRange.diff * depth;
 
-    vec3 ldir = normalize(-pos.xyz);
-    vec3 color = vec3(0.f, 0.5f, 0.8f);
-    float diffuse = clamp(dot(n, ldir), 0.f, 1.f);
-    FragColor = vec4(diffuse * color, 1.0);
+    float diffuse = max(0.0, dot(vec3(0,0,1), n));
+
+    vec3 eye = vec3 (0.0, 0.0, 1.0);
+    vec3 halfVector = normalize( eye + vec3(0,0,1));
+    float spec = max(pow(dot(n,halfVector), Ns), 0.);
+    vec4 S = light_specular*mat_specular* spec;
+
+    color = vec4(0.1686f, 0.73333f, 1.0f, 1.0f) + (particleColor - 0.1) * diffuse + S;
 }

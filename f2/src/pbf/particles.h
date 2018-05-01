@@ -58,9 +58,15 @@ namespace pbf {
 
     double s_corr(Particle &p, Particle &neighbor, double k, double delta_q, double n);
 
+    void updateColor(Particle &p);
+
     glm::vec3 find_vorticity(Particle &p);
 
     glm::vec3 find_viscosity(Particle &p);
+
+    glm::vec3 rgbToHsl(glm::vec3 rgb);
+    double hue2rgb(glm::vec3 pqt);
+    glm::vec3 hslToRgb(glm::vec3 hsl);
 
 //    glm::vec3 find_vorticity_force(Particle &p, glm::vec3 vorticity, double epsilon);
 
