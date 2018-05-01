@@ -38,7 +38,9 @@ namespace pbf {
 
     void clear();
 
-    int hash_position(glm::vec3 pos);
+    glm::ivec3 cell(glm::vec3 pos);
+
+    int hash_position(glm::ivec3 cell);
 
     void build_spatial_map();
 

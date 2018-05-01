@@ -23,6 +23,7 @@ namespace pbf {
     double rho = 0.0;
     double lambda = 0.0;
     std::vector<Particle *> neighbors;
+    glm::vec3 delta_p;
 
 
     Particle() :

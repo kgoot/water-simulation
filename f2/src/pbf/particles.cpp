@@ -102,31 +102,37 @@ namespace pbf {
         // TODO: Calculate lambdas
         build_spatial_map();
 
-        double rho0 = 6378.0;
+        double rho0 = 6000.0;
         double epsilon = 600.0;
-        double k = 0.0001;
+        double k = 0.001;
         double n = 4.0;
         double delta_q = 0.001 * _h;
 
 //        float vorticity_epsilon = 0.01;
-        float c = 0.0001;
-        for (Particle &p : _particles) {
-            find_neighbors(p);
-            p.rho = get_rho(p);
-            p.lambda = lambda(p.rho, rho0, p, epsilon);
-        }
-
-        for (Particle &p : _particles) {
-            double lambda_i = p.lambda;
-
-            glm::vec3 delta_p(0.f);
-            for (Particle* neighbor : p.neighbors) {
-                double lambda_j = neighbor->lambda;
-//                double s_corr_j = s_corr(p, *neighbor, k, delta_q, n);
-                delta_p += (float) (lambda_i + lambda_j) * w_gradient_spiky(p, *neighbor); // + s_corr_j
+        float c = 0.001; // 0.0001 works better for some reason
+        for (int i = 0; i < 2; i++) {
+            for (Particle &p : _particles) {
+                find_neighbors(p);
+                p.rho = get_rho(p);
+                p.lambda = lambda(p.rho, rho0, p, epsilon);
             }
-            delta_p /= rho0;
-            p.pred_pos += delta_p;
+
+            for (Particle &p : _particles) {
+                double lambda_i = p.lambda;
+
+                glm::vec3 delta_p(0.f);
+                for (Particle *neighbor : p.neighbors) {
+                    double lambda_j = neighbor->lambda;
+                    double s_corr_j = s_corr(p, *neighbor, k, delta_q, n);
+                    delta_p += (float) (lambda_i + lambda_j + s_corr_j) * w_gradient_spiky(p, *neighbor); // + s_corr_j
+                }
+                delta_p /= rho0;
+                p.delta_p = delta_p;
+            }
+
+            for (Particle &p : _particles) {
+                p.pred_pos += p.delta_p;
+            }
         }
 
 
@@ -167,26 +173,26 @@ namespace pbf {
                 std::cout << '\n';
             }
 
-//            // TODO: ours
-////            glm::vec3 vorticity_i = find_vorticity(p);
-////            glm::vec3 vorticity_force_i = find_vorticity_force(p, vorticity_i, epsilon);
-////            p.vel += vorticity_force_i * timestep;
-//            glm::vec3 viscosity(0.f);
-//            for (Particle* neighbor : p.neighbors) {
-//                glm::vec3 v_ij = neighbor->vel - p.vel;
-//                if (isnan(v_ij.x)) {
-//                    std::cout << "nan\n";
-//                }
-//                viscosity += v_ij * (float) w_poly_6(glm::distance(p.pred_pos, neighbor->pred_pos));
-//            }
-//
-////            std::cout << viscosity.x << ", " << viscosity.y << ", " << viscosity.z << '\n';
-//            p.vel = p.vel + 0.00001f * viscosity;
-//            if (isnan(p.vel.x)) {
-//                std::cout << '\n';
-//            }
-//            // TODO: up to here
-//
+            // TODO: ours
+//            glm::vec3 vorticity_i = find_vorticity(p);
+//            glm::vec3 vorticity_force_i = find_vorticity_force(p, vorticity_i, epsilon);
+//            p.vel += vorticity_force_i * timestep;
+            glm::vec3 viscosity(0.f);
+            for (Particle* neighbor : p.neighbors) {
+                glm::vec3 v_ij = neighbor->vel - p.vel;
+                if (isnan(v_ij.x)) {
+                    std::cout << "nan\n";
+                }
+                viscosity += v_ij * (float) w_poly_6(glm::distance(p.pred_pos, neighbor->pred_pos));
+            }
+
+//            std::cout << viscosity.x << ", " << viscosity.y << ", " << viscosity.z << '\n';
+            p.vel = p.vel + 0.0001f * viscosity;
+            if (isnan(p.vel.x)) {
+                std::cout << '\n';
+            }
+            // TODO: up to here
+
             p.pos = p.pred_pos;
 //            if (isnan(p.pred_pos.x)) {
 //                std::cout << '\n';
@@ -199,12 +205,17 @@ namespace pbf {
     }
 
 
-    int Particles::hash_position(glm::vec3 pos) { //float
+    glm::ivec3 Particles::cell(glm::vec3 pos) { //float
         int x = (int) (pos.x / _h);
         int y = (int) (pos.y / _h);
         int z = (int) (pos.z / _h);
 
-        return (x * 31 + y) * 31 + z; // (float)
+        return glm::ivec3(x, y, z); // (float)
+    }
+
+
+    int Particles::hash_position(glm::ivec3 cell) {
+        return (cell.x * 31 + cell.y) * 31 + cell.z;
     }
 
 
@@ -215,7 +226,7 @@ namespace pbf {
         _spatial_map.clear();
 
         for (Particle &p : _particles) {
-            int hash_pos = hash_position(p.pred_pos);
+            int hash_pos = hash_position(cell(p.pred_pos));
             if (_spatial_map.find(hash_pos) == _spatial_map.end()) {
                 vector<Particle *> *box_p = new vector<Particle *>();
                 box_p->push_back(&p);
@@ -232,11 +243,13 @@ namespace pbf {
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
                 for (int k = -1; k <= 1; k++) {
-                    int hash_pos = hash_position(p.pred_pos + (float) _h * glm::vec3(i, j, k));
+                    int hash_pos = hash_position(cell(p.pred_pos) + glm::ivec3(i, j, k));
                     if (_spatial_map.find(hash_pos) != _spatial_map.end()) {
                         for (Particle *neighbor : *_spatial_map[hash_pos]) {
 //                            if (&p != neighbor) {
-                            p.neighbors.push_back(neighbor);
+                            if (glm::distance(p.pred_pos, neighbor->pred_pos) < _h) {
+                                p.neighbors.push_back(neighbor);
+                            }
 //                            }
                         }
                     }
@@ -262,7 +275,8 @@ namespace pbf {
         if (glm::length(r) >= _h || glm::length(r) < EPS_F) {
             return glm::vec3(0.f);
         }
-        return (float) (-45.0 / (M_PI * powf(_h, 6.0))) * powf(_h - glm::length(r), 2.0) * glm::normalize(r); // do I normalize r or the whole thing?
+        return (float) (-45.0 / (M_PI * powf(_h, 6.0))) * powf(_h - glm::length(r), 2.0) *
+               glm::normalize(r); // do I normalize r or the whole thing?
     }
 
 
@@ -317,7 +331,7 @@ namespace pbf {
 
     glm::vec3 Particles::find_vorticity_force(Particle &p, glm::vec3 vorticity, double epsilon) {
         glm::vec3 force(0.f);
-        for (Particle* neighbor : p.neighbors) {
+        for (Particle *neighbor : p.neighbors) {
             glm::vec3 p_xor = (p.pred_pos + neighbor->pred_pos) / 2.f;
             glm::vec3 eta = p_xor - p.pred_pos;
             glm::vec3 N = glm::normalize(eta);
