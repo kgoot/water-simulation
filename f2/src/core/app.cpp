@@ -46,7 +46,6 @@ void App::begin() {
     while (accumulator >= TIMESTEP) {
       accumulator -= TIMESTEP;
       update_state(TIMESTEP);
-      // TODO
       break;
     }
 

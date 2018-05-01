@@ -62,7 +62,9 @@ namespace pbf {
 
     glm::vec3 find_vorticity(Particle &p);
 
-    glm::vec3 find_vorticity_force(Particle &p, glm::vec3 vorticity, double epsilon);
+    glm::vec3 find_viscosity(Particle &p);
+
+//    glm::vec3 find_vorticity_force(Particle &p, glm::vec3 vorticity, double epsilon);
 
 
   private:
