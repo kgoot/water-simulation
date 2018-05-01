@@ -38,5 +38,5 @@ void main() {
     float spec = max(pow(dot(n,halfVector), Ns), 0.);
     vec4 S = light_specular*mat_specular* spec;
 
-    color = vec4(0.1686f, 0.73333f, 1.0f, 1.0f) * diffuse + S;
+    color = vec4(0.1686f, 0.73333f, 1.0f, 1.0f) + (particleColor - 0.1) * diffuse + S;
 }

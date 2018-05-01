@@ -4,7 +4,7 @@ using namespace glm;
 #include "color.h"
 #include <algorithm>
 
-vec3 rgbToHsl(vec3 rgb){
+glm::vec3 rgbToHsl(vec3 rgb){
   float max_val = std::max(rgb.x, rgb.y);
   max_val = std::max(max_val, rgb.z);
   float min_val = std::min(rgb.x, rgb.y);
@@ -39,10 +39,10 @@ vec3 rgbToHsl(vec3 rgb){
     h = h/6.0;
   }
 
-  return vec3(h, s, l);
+  return glm::vec3(h, s, l);
 }
 
-double hue2rgb(vec3 pqt){
+double hue2rgb(glm::vec3 pqt){
   if(pqt.z < 0) pqt.z = pqt.z + 1;
   if(pqt.z > 1) pqt.z = pqt.z - 1;
   if(pqt.z < 1.0/6.0) return pqt.x + (pqt.y - pqt.x) * 6.0 * pqt.z;
@@ -51,8 +51,8 @@ double hue2rgb(vec3 pqt){
   return pqt.x;
 }
 
-vec3 hslToRgb(vec3 hsl){
-  vec3 rgb = vec3(0,0,0);
+glm::vec3 hslToRgb(glm::vec3 hsl){
+  glm::vec3 rgb = glm::vec3(0,0,0);
 
   if(hsl.y == 0){
     rgb.x = hsl.z;
@@ -66,9 +66,9 @@ vec3 hslToRgb(vec3 hsl){
       q = hsl.z + hsl.y - hsl.z * hsl.y;
     }
     float p = 2 * hsl.z - q;
-    rgb.x = hue2rgb(vec3(p, q, hsl.x + 1.0/3.0));
-    rgb.y = hue2rgb(vec3(p, q, hsl.x));
-    rgb.z = hue2rgb(vec3(p, q, hsl.x - 1.0/3.0));
+    rgb.x = hue2rgb(glm::vec3(p, q, hsl.x + 1.0/3.0));
+    rgb.y = hue2rgb(glm::vec3(p, q, hsl.x));
+    rgb.z = hue2rgb(glm::vec3(p, q, hsl.x - 1.0/3.0));
   }
   return rgb;
 }

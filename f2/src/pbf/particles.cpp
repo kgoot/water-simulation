@@ -15,7 +15,6 @@
 #include "../core/input.h"
 #include "../util/util.h"
 #include "../scene/scene.h"
-#include "color.h"
 
 #include "../common.h"
 
@@ -93,18 +92,83 @@ namespace pbf {
     }
 
 
-//    void Particles::updateColor(Particle &p) {
-//      double ratio = pow(1.0/sqrt(pow(p.vel.x,2) + pow(p.vel.y,2) + pow(p.vel.z,2)),4);
-//      vec3 hsl_color = rgbToHsl(vec3(0.1686f, 0.73333f, 1.0f));
-//
-//      hsl_color.z = 1.0  - ratio;
-//      if (hsl_color.z < 0.58) {
-//        hsl_color.z = 0.58;
-//      }
-//
-//      vec3 rgb_color = hslToRgb(hsl_color);
-//      p.color = vec4(rgb_color, 1.0);
-//    }
+    glm::vec3 Particles::rgbToHsl(vec3 rgb){
+      float max_val = (rgb.x > rgb.y)? rgb.x : rgb.y;
+      max_val = (max_val > rgb.z)? max_val : rgb.z;
+      float min_val = (rgb.x < rgb.y)? rgb.x : rgb.y;
+      min_val = (min_val < rgb.z)? min_val : rgb.z;
+      float h = (max_val + min_val) / 2.0;
+      float s = (max_val + min_val) / 2.0;
+      float l = (max_val + min_val) / 2.0;
+
+      if(max_val == min_val)
+        return glm::vec3(0.0f, 0.0f, l);
+
+      float d = max_val - min_val;
+      s = (l > -0.5)? d/(2.0 - max_val - min_val) : d/(max_val+min_val);
+
+      if (max_val == rgb.x) {
+        float delta = 0.0;
+        if (rgb.y < rgb.z) {
+          delta = 6;
+        }
+        h = (rgb.y - rgb.z) / d + delta;
+      } else if (max_val == rgb.y) {
+        h = (rgb.z - rgb.x) / d + 2;
+      } else {
+        h = (rgb.x - rgb.y) / d + 4;
+      }
+
+      h = h/6.0;
+
+      return glm::vec3(h, s, l);
+    }
+
+    double Particles::hue2rgb(glm::vec3 pqt){
+      if(pqt.z < 0) pqt.z = pqt.z + 1;
+      if(pqt.z > 1) pqt.z = pqt.z - 1;
+      if(pqt.z < 1.0/6.0) return pqt.x + (pqt.y - pqt.x) * 6.0 * pqt.z;
+      if(pqt.z < 1.0/2.0) return pqt.y;
+      if(pqt.z < 2.0/3.0) return pqt.x + (pqt.y - pqt.x) * (2.0/3.0 - pqt.z) * 6.0;
+      return pqt.x;
+    }
+
+    glm::vec3 Particles::hslToRgb(glm::vec3 hsl){
+      glm::vec3 rgb = glm::vec3(0,0,0);
+
+      if(hsl.y == 0){
+        rgb.x = hsl.z;
+        rgb.y = hsl.z;
+        rgb.z = hsl.z;
+      }else{
+        float q = 0;
+        if (hsl.z < 0.5) {
+          q = hsl.z * (1 + hsl.y);
+        } else {
+          q = hsl.z + hsl.y - hsl.z * hsl.y;
+        }
+        float p = 2 * hsl.z - q;
+        rgb.x = hue2rgb(glm::vec3(p, q, hsl.x + 1.0/3.0));
+        rgb.y = hue2rgb(glm::vec3(p, q, hsl.x));
+        rgb.z = hue2rgb(glm::vec3(p, q, hsl.x - 1.0/3.0));
+      }
+      return rgb;
+    }
+
+
+    void Particles::updateColor(Particle &p) {
+      double ratio = pow(1.0/sqrt(pow(p.vel.x,2) + pow(p.vel.y,2) + pow(p.vel.z,2)),4);
+
+      glm::vec3 hsl_color = rgbToHsl(glm::vec3(0.1686f, 0.73333f, 1.0f));
+
+      hsl_color.z = 1.0  - ratio;
+      if (hsl_color.z < 0.58) {
+        hsl_color.z = 0.58;
+      }
+
+      glm::vec3 rgb_color = hslToRgb(hsl_color);
+
+    }
 
     void Particles::update(double dt) {
         float timestep = (float) dt;
@@ -112,7 +176,8 @@ namespace pbf {
         for (Particle &p : _particles) {
             p.vel += glm::vec3(0, -9.8f, 0) * timestep;
             p.pred_pos = p.pos + p.vel * timestep;
-//            updateColor(p);
+            updateColor(p);
+            if (p.color.a != 1.0f) std::cout << "different" << endl;
         }
 
 

@@ -16,5 +16,6 @@ void main() {
     fPos = (model * vec4(aPos, 1.f)).xyz;
 	gl_Position = proj * view * vec4(fPos, 1.f);
     gl_PointSize = vpheight * proj[1][1] * radius / gl_Position.w;
+
     particleColor = vertexColor;
 }

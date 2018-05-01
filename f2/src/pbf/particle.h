@@ -9,6 +9,7 @@
 
 #include <glm/vec3.hpp>
 #include <vector>
+#include "color.h"
 //using namespace std;
 
 namespace pbf {
