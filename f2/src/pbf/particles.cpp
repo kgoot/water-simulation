@@ -108,8 +108,10 @@ namespace pbf {
         double n = 4.0;
         double delta_q = 0.001 * _h;
 
-//        float vorticity_epsilon = 0.01;
-        float c = 0.001; // 0.0001 works better for some reason
+        float vorticity_epsilon = 0.00002f;
+        float c = 0.0000001f;
+
+
         for (int i = 0; i < 2; i++) {
             for (Particle &p : _particles) {
                 find_neighbors(p);
@@ -169,34 +171,8 @@ namespace pbf {
 
         for (Particle &p : _particles) {
             p.vel = (p.pred_pos - p.pos) / timestep;
-            if (isnan(p.vel.x)) {
-                std::cout << '\n';
-            }
-
-            // TODO: ours
-//            glm::vec3 vorticity_i = find_vorticity(p);
-//            glm::vec3 vorticity_force_i = find_vorticity_force(p, vorticity_i, epsilon);
-//            p.vel += vorticity_force_i * timestep;
-            glm::vec3 viscosity(0.f);
-            for (Particle* neighbor : p.neighbors) {
-                glm::vec3 v_ij = neighbor->vel - p.vel;
-                if (isnan(v_ij.x)) {
-                    std::cout << "nan\n";
-                }
-                viscosity += v_ij * (float) w_poly_6(glm::distance(p.pred_pos, neighbor->pred_pos));
-            }
-
-//            std::cout << viscosity.x << ", " << viscosity.y << ", " << viscosity.z << '\n';
-            p.vel = p.vel + 0.0001f * viscosity;
-            if (isnan(p.vel.x)) {
-                std::cout << '\n';
-            }
-            // TODO: up to here
-
             p.pos = p.pred_pos;
-//            if (isnan(p.pred_pos.x)) {
-//                std::cout << '\n';
-//            }
+            p.vel += find_vorticity(p) * timestep * vorticity_epsilon + find_viscosity(p) * c;
         }
     }
 
@@ -320,27 +296,65 @@ namespace pbf {
 
 
     glm::vec3 Particles::find_vorticity(Particle &p) {
-        glm::vec3 vorticity(0.f);
-        for (Particle *neighbor : p.neighbors) {
+        glm::vec3 w(0.f);
+        for (Particle* neighbor : p.neighbors) {
             glm::vec3 v_ij = neighbor->vel - p.vel;
             glm::vec3 grad = w_gradient_spiky(p, *neighbor);
-            vorticity += glm::cross(v_ij, grad);
+            w += glm::cross(v_ij, grad);
         }
-        return vorticity;
+        float vorticity = glm::length(w);
+
+        glm::vec3 eta(0.f);
+        for (Particle* neighbor : p.neighbors) {
+            eta += vorticity * w_gradient_spiky(p, *neighbor);
+        }
+        glm::vec3 N(0.f);
+        if (glm::length(eta) > EPS_F) {
+            N = normalize(eta);
+        }
+
+        return glm::cross(N, w);
     }
 
-    glm::vec3 Particles::find_vorticity_force(Particle &p, glm::vec3 vorticity, double epsilon) {
-        glm::vec3 force(0.f);
+//    glm::vec3 Particles::find_vorticity_force(Particle &p, glm::vec3 vorticity, double epsilon) {
+//        glm::vec3 force(0.f);
+//        for (Particle *neighbor : p.neighbors) {
+//            glm::vec3 p_xor = (p.pred_pos + neighbor->pred_pos) / 2.f;
+//            glm::vec3 eta = p_xor - p.pred_pos;
+//            glm::vec3 N = glm::normalize(eta);
+//            if (glm::length(eta) != 0.f) {
+//                force += (float) epsilon * (glm::cross(N, vorticity)) * (float) p.rho;
+//            }
+//        }
+////        glm::vec3 N = eta / glm::normalize(eta);
+//        return force;
+//    }
+
+    glm::vec3 Particles::find_viscosity(Particle &p) {
+        glm::vec3 viscosity(0.f);
         for (Particle *neighbor : p.neighbors) {
-            glm::vec3 p_xor = (p.pred_pos + neighbor->pred_pos) / 2.f;
-            glm::vec3 eta = p_xor - p.pred_pos;
-            glm::vec3 N = glm::normalize(eta);
-            if (glm::length(eta) != 0.f) {
-                force += (float) epsilon * (glm::cross(N, vorticity)) * (float) p.rho;
-            }
+            glm::vec3 v_ij = neighbor->vel - p.vel;
+            viscosity += v_ij * (float) w_poly_6(glm::distance(p.pred_pos, neighbor->pred_pos));
         }
-//        glm::vec3 N = eta / glm::normalize(eta);
-        return force;
+        return viscosity;
     }
+
+//            glm::vec3 vorticity_i = find_vorticity(p);
+//            glm::vec3 vorticity_force_i = find_vorticity_force(p, vorticity_i, epsilon);
+//            p.vel += vorticity_force_i * timestep;
+//            glm::vec3 viscosity(0.f);
+//            for (Particle* neighbor : p.neighbors) {
+//                glm::vec3 v_ij = neighbor->vel - p.vel;
+//                if (isnan(v_ij.x)) {
+//                    std::cout << "nan\n";
+//                }
+//                viscosity += v_ij * (float) w_poly_6(glm::distance(p.pred_pos, neighbor->pred_pos));
+//            }
+//
+////            std::cout << viscosity.x << ", " << viscosity.y << ", " << viscosity.z << '\n';
+//            p.vel = p.vel + c * viscosity;
+//            if (isnan(p.vel.x)) {
+//                std::cout << '\n';
+//            }
 
 }

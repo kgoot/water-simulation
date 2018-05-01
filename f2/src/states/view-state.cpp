@@ -67,7 +67,7 @@ void ViewState::reset_scene() {
 
   _particles.clear();
   glm::vec3 ori(0, 2, 0);
-  _particles.spawn_sphere(ori, 0.33, 20.f);
+  _particles.spawn_sphere(ori, 0.25, 20.f);
 
 }
 
