@@ -17,6 +17,7 @@ namespace pbf {
     glm::vec3 pos;
     glm::vec3 pred_pos;
     glm::vec3 vel;
+    glm::vec4 color = glm::vec4(0.1686f, 0.73333f, 1.0f, 1.0f);
 
     float mass = 1;
     double radius = 0.5;
