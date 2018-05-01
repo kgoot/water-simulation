@@ -24,7 +24,7 @@ namespace pbf {
 
     void spawn_disk();
 
-    void spawn_sphere(glm::vec3 &origin, float r, float density=14.f);
+    void spawn_sphere(glm::vec3 &origin, float r, float density=10.f);
 
     void spawn_rect();
 
@@ -67,7 +67,7 @@ namespace pbf {
     std::vector<Particle> _particles;
     std::map<int, std::vector<Particle *> *> _spatial_map;
     Program _program;
-    double _h = 0.075;
+    double _h = 0.105;
 
     bool _is_collidable = false;
   };
