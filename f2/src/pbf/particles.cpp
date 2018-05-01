@@ -93,18 +93,18 @@ namespace pbf {
     }
 
 
-    void Particles::updateColor(Particle &p) {
-      double ratio = pow(1.0/sqrt(pow(p.vel.x,2) + pow(p.vel.y,2) + pow(p.vel.z,2)),4);
-      vec3 hsl_color = rgbToHsl(vec3(0.1686f, 0.73333f, 1.0f));
-
-      hsl_color.z = 1.0  - ratio;
-      if (hsl_color.z < 0.58) {
-        hsl_color.z = 0.58;
-      }
-
-      vec3 rgb_color = hslToRgb(hsl_color);
-      p.color = vec4(rgb_color, 1.0);
-    }
+//    void Particles::updateColor(Particle &p) {
+//      double ratio = pow(1.0/sqrt(pow(p.vel.x,2) + pow(p.vel.y,2) + pow(p.vel.z,2)),4);
+//      vec3 hsl_color = rgbToHsl(vec3(0.1686f, 0.73333f, 1.0f));
+//
+//      hsl_color.z = 1.0  - ratio;
+//      if (hsl_color.z < 0.58) {
+//        hsl_color.z = 0.58;
+//      }
+//
+//      vec3 rgb_color = hslToRgb(hsl_color);
+//      p.color = vec4(rgb_color, 1.0);
+//    }
 
     void Particles::update(double dt) {
         float timestep = (float) dt;
@@ -112,7 +112,7 @@ namespace pbf {
         for (Particle &p : _particles) {
             p.vel += glm::vec3(0, -9.8f, 0) * timestep;
             p.pred_pos = p.pos + p.vel * timestep;
-            updateColor(p);
+//            updateColor(p);
         }
 
 

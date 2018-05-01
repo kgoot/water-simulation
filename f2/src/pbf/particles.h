@@ -58,7 +58,7 @@ namespace pbf {
 
     double s_corr(Particle &p, Particle &neighbor, double k, double delta_q, double n);
 
-    void updateColor(Particle &p);
+//    void updateColor(Particle &p);
 
     glm::vec3 find_vorticity(Particle &p);
 
