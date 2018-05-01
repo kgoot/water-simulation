@@ -24,7 +24,7 @@ namespace pbf {
 
     void spawn_disk();
 
-    void spawn_sphere(glm::vec3 &origin, float r, float density=12.f);
+    void spawn_sphere(glm::vec3 &origin, float r, float density=14.f);
 
     void spawn_rect();
 
@@ -58,7 +58,7 @@ namespace pbf {
 
     glm::vec3 find_vorticity(Particle &p);
 
-    glm::vec3 find_vorticity_force(glm::vec3 vorticity, double epsilon);
+    glm::vec3 find_vorticity_force(Particle &p, glm::vec3 vorticity, double epsilon);
 
 
   private:
@@ -67,7 +67,7 @@ namespace pbf {
     std::vector<Particle> _particles;
     std::map<int, std::vector<Particle *> *> _spatial_map;
     Program _program;
-    double _h = 0.125;
+    double _h = 0.075;
 
     bool _is_collidable = false;
   };

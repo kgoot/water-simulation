@@ -5,7 +5,7 @@
 #ifndef F2_PARTICLE_H
 #define F2_PARTICLE_H
 
-#define PARTICLE_RADIUS 0.05f
+#define PARTICLE_RADIUS 0.025f
 
 #include <glm/vec3.hpp>
 #include <vector>

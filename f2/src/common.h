@@ -5,7 +5,7 @@
 #ifndef F2_COMMON_H
 #define F2_COMMON_H
 
-#define TIMESTEP 0.016667f
+#define TIMESTEP 0.008333f
 #define EPS_F 1e-6f
 #define FRICTION 0.1f
 
