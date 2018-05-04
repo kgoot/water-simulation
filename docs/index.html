@@ -48,7 +48,7 @@
     </center>
 
     <h2>Abstract</h2>
-    <p>In this project, we will build a 3D position based particle simulator. This project is done based off the work on <a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position Based Fluids [Macklin, Muller]</a>. [TODO]</p>
+    <p>In this project, we will build a 3D position based particle simulator based off the work in  the <a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position Based Fluids [Macklin, Muller]</a> paper. This technique combines incompressible flow with vorticity confinement and viscosity to simulate water. After we used this technique to simulate water, we moved onto other materials such as styrofoam, oil, and boba by implementing Blinn-Phong and specular shading. We also implemented a velocity-based coloring technique that changed the particles' color based on their velocity. Watch the video below to see our final results! </p>
 
 
     <h2>Technical Approach and Implementation</h2>
@@ -96,12 +96,17 @@
 
 
     <h3>Problems Encountered</h3>
-    <p> Over the course of our implementation journey, we encountered a couple of different technical problems. First,due to bugs in our implementation of incompressibility, we ran into a situation where all the particles were exploding away from each other upon collision, resulting in velocities that were too high. TODO: Insert yay1 video. Next, we had another issue due to a bug in our plane collision code where our particles were leaking out of the edges and corners of the bounding box. TODO: Add demo of yay2. After adjusting how we calculate plane collisions, we were able to capture and contain all our particles without our bounding volume! </p>
+    <p> Over the course of our implementation journey, we encountered a couple of different technical problems. First, we had an issue due to a bug in our plane collision code where our particles were leaking out of the edges and corners of the bounding box. 
+
+      <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/9DCnNeMLpPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center> 
+
+      After adjusting how we calculate plane collisions, we were able to capture and contain all our particles without our bounding volume! Next, due to bugs in our implementation of incompressibility, we ran into a situation where all the particles were exploding away from each other upon collision, resulting in velocities that were too high.<p></p>  
+
+
+       <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/cQFWVPt59e0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center> </p>
 
     <h3>Lessons Learned</h3>
-    <p> One of the key lessons we over the course of this project was how to navigate through and parse and academic research paper. Being able to understand the complicated mathematical formulation and translate them into functioning code that models similar results proved to be a really interesting and difficult challenge. Another key learning was around setting up a functioning repository structure, navigating git and cmake configurations, and working colleberatery with three different people within a single project structure. In the course of the project we also learned a lot about fluid dynamics and particle interactions. Finally, we have a newfound appreciation for the power of the GPU and the incredible speedups possible due to parallelization that made real time graphics and rendering a reality. </p>
-
-
+    <p> One of the key lessons we over the course of this project was how to navigate through and parse and academic research paper. Being able to understand the complicated mathematical formulation and translate them into functioning code that models similar results proved to be a really interesting and difficult challenge. Another key learning was around setting up a functioning repository structure, navigating git and cmake configurations, and working with three different people within a single project structure. In the course of the project we also learned a lot about fluid dynamics and particle interactions. Finally, we have a newfound appreciation for the power of the GPU and the incredible speedups possible due to parallelization that made real time graphics and rendering a reality. </p>
 
     <h2>Results</h2>
 
@@ -111,14 +116,16 @@
 
     <center>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/uniKg68YMZw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </center>
+    </center><p></p>
 
 
     <h2>References</h2>
-    TODO
+    <li><a href="http://mmacklin.com/pbf_sig_preprint.pdf ">Position Based Fluids</a></li>
+    <li><a href="https://cs184sp18.github.io/project-resources/#/">CS 184 Resources</a></li><p></p>
+
 
     <h2>Contributions</h2>
-    TODO
+    <li>Anna: Worked on modeling different materials, Blinn-Phong/specular shading, and color changing velocity.</li>
 
    
 
