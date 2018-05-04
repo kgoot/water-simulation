@@ -36,19 +36,20 @@
 </section> -->
 
 <!-- Section 1 -->
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="milestone">
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="final">
   <div class="content">
     <center>
       <h1>CS 184: Computer Graphics and Imaging</h1>
-      <h2>Final Project Milestone: 3D Fluid Interactions with Different Viscosities</h2>
+      <h2>Final Project: 3D Particle Fluid Simulator</h2>
       <br>
       <h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
       <h4>SIDs: 25289428, 25033827, 25358477</h4>
+      <a href="#milestone" class="button fit smooth-scroll-middle">Click here for project milestone</a>
       <a href="#proposal" class="button fit smooth-scroll-middle">Click here for project proposal</a>
     </center>
 
     <h2>Abstract</h2>
-    <p>In this project, we will build a 3D position based particle simulator based off the work in  the <a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position Based Fluids [Macklin, Muller]</a> paper. This technique combines incompressible flow with vorticity confinement and viscosity to simulate water. After we used this technique to simulate water, we moved onto other materials such as styrofoam, oil, and boba by implementing Blinn-Phong and specular shading. We also implemented a velocity-based coloring technique that changed the particles' color based on their velocity. Watch the video below to see our final results! </p>
+    <p>In this project, we will build a 3D position based particle simulator based off the work in  the <a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position Based Fluids [Macklin, Muller]</a> paper. This technique combines incompressible flow with vorticity confinement and viscosity to simulate water. Once the mathematical model is implemented, we will use this technique to simulate water. Next, we will move onto other materials such as styrofoam, oil, and boba by implementing Blinn-Phong and specular shading. Finally, We will implement a velocity-based coloring technique that changes the particles' color based on their velocity. Read on to see our implementation approach and results or watch our <a href="https://www.youtube.com/embed/uniKg68YMZw">final video</a>! </p>
 
 
     <h2>Technical Approach and Implementation</h2>
@@ -98,21 +99,72 @@
     <h3>Problems Encountered</h3>
     <p> Over the course of our implementation journey, we encountered a couple of different technical problems. First, we had an issue due to a bug in our plane collision code where our particles were leaking out of the edges and corners of the bounding box. 
 
-      <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/9DCnNeMLpPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center> 
+    <center> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9DCnNeMLpPE?&autoplay=1&loop=1&playlist=9DCnNeMLpPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       <figcaption style='font-size: 12px'> Escaping particles: Bounding volume issues </figcaption>
+       <br>
+    </center> 
 
-      After adjusting how we calculate plane collisions, we were able to capture and contain all our particles without our bounding volume! Next, due to bugs in our implementation of incompressibility, we ran into a situation where all the particles were exploding away from each other upon collision, resulting in velocities that were too high.<p></p>  
+    <p>After adjusting how we calculate plane collisions, we were able to capture and contain all our particles without our bounding volume! Next, due to bugs in our implementation of incompressibility, we ran into a situation where all the particles were exploding away from each other upon collision, resulting in velocities that were too high.</p>  
 
 
-       <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/cQFWVPt59e0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center> </p>
+     <center> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cQFWVPt59e0?&autoplay=1&loop=1&playlist=cQFWVPt59e0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <figcaption style='font-size: 12px'> Lava Lamp bug: Issues with vorticity </figcaption>
+         <br>
+     </center> </p>
 
     <h3>Lessons Learned</h3>
     <p> One of the key lessons we over the course of this project was how to navigate through and parse and academic research paper. Being able to understand the complicated mathematical formulation and translate them into functioning code that models similar results proved to be a really interesting and difficult challenge. Another key learning was around setting up a functioning repository structure, navigating git and cmake configurations, and working with three different people within a single project structure. In the course of the project we also learned a lot about fluid dynamics and particle interactions. Finally, we have a newfound appreciation for the power of the GPU and the incredible speedups possible due to parallelization that made real time graphics and rendering a reality. </p>
 
     <h2>Results</h2>
 
-    <p> You can refer to the final sumary slides of our project: <a href="https://kgoot.github.io/water-simulation/final_fluids.pdf" target="_blank" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> View Slides</a> </p>
+    <p>Below is a demonstration of our results using regular water particles with diffuse and specular Blinn Phong shading: </p>
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Je64Ns5ZcQs?&autoplay=1&loop=1&playlist=Je64Ns5ZcQs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <figcaption style='font-size: 12px'> Water simulator with Blinn Phong diffuse and specular shading </figcaption>
+      <br>
+    </center>
 
-    <p>In addition, we created a final video demo and summary of our key resutls:</p>
+    <p>After getting our water simulator to work like we would expect it to, we started experimenting with different shading mechanisms as well as different material properties. Our goal was to try to observe how changing different parameters such as particle mass, viscosity and shading parameters can change the overall simulation results. First, we experimented with adding and removing shading from our particles. Without shading, the simulation looks like a singular liquid which we thought was surprisingly realistic. To isolate each particle and visualize how they interact with each other, Blinn Phong shading is definitely more effective:</p>
+
+    <center>
+       <iframe width="280" height="157" src="https://www.youtube.com/embed/Cnow2Wzh7x4?&autoplay=1&loop=1&playlist=Cnow2Wzh7x4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="280" height="157" src="https://www.youtube.com/embed/ewoYiixN800?&autoplay=1&loop=1&playlist=ewoYiixN800" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       <iframe width="280" height="157" src="https://www.youtube.com/embed/VkgIXGMGF7g?&autoplay=1&loop=1&playlist=VkgIXGMGF7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <figcaption style='font-size: 12px'> Water simulator with no shading, only diffuse shading and diffuse and specular shading </figcaption>
+        <br>
+    </center>
+
+    <p>Next, we tried to simulate Styrofoam balls. Styrofoam is really light and should be more bouncy which we were able to achieve by modifying parameters in our particle simulator.</p>
+
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7HtwxF3UpUQ?&autoplay=1&loop=1&playlist=7HtwxF3UpUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <figcaption style='font-size: 12px'> Styrofoam particle simulator </figcaption>
+      <br>
+    </center>
+
+    <p>We also wanted to simulate a liquid with a different viscosity than water. We decided to simulate oil but modifying the viscosity value in the simulator. We also played around with transparency and color parameters of our fragment shaders to achieve the result here:</p>
+
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jhVtCe572lM?&autoplay=1&loop=1&playlist=jhVtCe572lM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <figcaption style='font-size: 12px'> Oil particle simulator </figcaption>
+      <br>
+    </center>
+
+    <p>Finally, we wanted to implement velocity based color change in our particles. This should make the simulation more realistic since particles traveling at higher speeds should be lighter (or in the case of water, foamy and white). We decided to create this visualization with a boba simulator. Boba balls are dark but transparent, so our simulator makes the balls increasingly more transparent as the velocity increases. Below is a demo of our favorite boba results:</p>
+
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/katIYzaPbuU?&autoplay=1&loop=1&playlist=katIYzaPbuU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <figcaption style='font-size: 12px'> Boba particle simulator </figcaption>
+      <br>
+    </center>
+
+    <hr size="30">
+    
+    <p> You can refer to the final summary slides of our project: <a href="https://kgoot.github.io/water-simulation/final_fluids.pdf" target="_blank" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> View Slides</a> </p>
+
+    <p>In addition, we created a final video to demo and summarize our key results:</p>
 
     <center>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/uniKg68YMZw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -121,14 +173,24 @@
 
     <h2>References</h2>
     <li><a href="http://mmacklin.com/pbf_sig_preprint.pdf ">Position Based Fluids</a></li>
-    <li><a href="https://cs184sp18.github.io/project-resources/#/">CS 184 Resources</a></li><p></p>
+    <li><a href="https://cs184sp18.github.io/project-resources/#/">CS 184 Resources</a></li><p>
+    <li><a href="https://www.michael-smith-engineers.co.uk/resources/useful-info/approximate-viscosities-of-common-liquids-by-type ">Viscosities of common liquids by type</a></li>
+    <li><a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position based fluid dynamics math and equations</a></li>
+    <li><a href="https://learnopengl.com/">OpenGL tutorial</a></li>
+    </p>
 
 
     <h2>Contributions</h2>
-    <li>Anna: Worked on modeling different materials, Blinn-Phong/specular shading, and color changing velocity.</li>
+    <li>Anna worked on modeling different materials like Blinn-Phong diffuse and specular shading as well as the parameters required to modify our particle properties. In addition, she implemented color changing velocity.</li>
+    <li>Justin worked on implementing and debugging incompressibility, vorticity and viscosity code. He also created a neighborhood structure for the particles.</li>
+    <li>Karina set up the simulation environment. She structured the planes and particles in the scene. In addition she helped debug incompressibility code</li>
 
-   
+    <br>
 
+    <p>All three of us worked on investigating initial implementation approaches including tradeoffs between THREE.js, WebGL and OpenGL</p>
+   <br>
+
+   <hr size="30">
   </div>
 </section>
 
@@ -136,14 +198,14 @@
 <!-- Section 1 -->
 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="milestone">
   <div class="content">
-<!--   	<center>
-  		<h1>CS 184: Computer Graphics and Imaging</h1>
-  		<h2>Final Project Milestone: 3D Fluid Interactions with Different Viscosities</h2>
+  	<center>
+  		<!-- <h1>CS 184: Computer Graphics and Imaging</h1> -->
+  		<h2>Final Project Milestone: 3D Particle Fluid Simulator</h2>
   		<br>
-  		<h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
-  		<h4>SIDs: 25289428, 25033827, 25358477</h4>
+  		<!-- <h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4> -->
+  		<!-- <h4>SIDs: 25289428, 25033827, 25358477</h4> -->
   		<a href="#proposal" class="button fit smooth-scroll-middle">Click here for project proposal</a>
-  	</center> -->
+  	</center>
 
   	<h2>Abstract</h2>
   	<p>In this project, we will build a 3D position based particle simulator. This project is done based off the work on <a href="http://mmacklin.com/pbf_sig_preprint.pdf">Position Based Fluids [Macklin, Muller]</a>. In the current stage of the project, particle-plane collisions and gravitational forces act on the particles allowing them to fall within a confined plane. Up next we will implement rendering of fluid properties including incompressibility (which we are currently debugging), vorticity and viscosity.</p>
@@ -187,6 +249,7 @@
     <h2>Timeline Update</h2>
     <p>We believe we are on track to accomplish our goals for this project. Taking time to get antiquated with openGL and feel comfortable the the language in the paper took us longer than we anticipated. However, despite the fact that we've encountered difficulties and bugs, we were able to create an initial structure and think we will be able to accomplish all our goals by the final deadline.</p>
 
+    <hr size="30">
   </div>
 </section>
 
@@ -201,7 +264,9 @@
   		<h4>Created by <a href="https://kgoot.github.io"> Karina Goot</a>, <a href="http://aleskova.me/"> Anna Leskova</a> and <a href="https://www.linkedin.com/in/justin-y-kang/"> Justin Kang</a></h4>
   		<h4>SIDs: 25289428, 25358477, 25033827</h4>
   	</center> -->
-    <h1>Final Project Proposal</h1>
+    <center>
+      <h2>Final Project Proposal</h2>
+    </center>
     <h2>Overview</h2>
 
     <p>Our project is a 3D fluid simulator in a confined space. It will simulate the interaction between fluids of different viscosities and physical properties. </p>
